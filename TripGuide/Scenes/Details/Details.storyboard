@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="PwY-Bo-wog">
+            <objects>
+                <viewController id="1dl-Me-9uu" customClass="DetailsViewController" customModule="TouristGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uGy-Y9-bfW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yU3-1K-T59">
+                                <rect key="frame" x="0.0" y="216" width="393" height="602"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qoo-mv-H01">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h2T-Mt-Ij4">
+                                <rect key="frame" x="91.666666666666686" y="165" width="210" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-Ad-2VF">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="gxQ-LK-YPy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="fork.knife.circle.fill" catalog="system" imagePlacement="top" subtitle="Restaurants">
+                                            <fontDescription key="subtitleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton:" destination="1dl-Me-9uu" eventType="touchUpInside" id="lfQ-8T-TlZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjH-bk-JxO">
+                                        <rect key="frame" x="110" y="0.0" width="100" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="building.2.crop.circle.fill" catalog="system" imagePlacement="top" subtitle="Hotels">
+                                            <fontDescription key="subtitleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton:" destination="1dl-Me-9uu" eventType="touchUpInside" id="meE-nL-xM0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="K3K-gh-9AB"/>
+                                    <constraint firstAttribute="width" constant="210" id="j5z-WA-7fw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kQg-yf-bZ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h2T-Mt-Ij4" firstAttribute="top" secondItem="kQg-yf-bZ7" secondAttribute="top" constant="10" id="5Ez-Xx-Jkn"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="bottom" secondItem="kQg-yf-bZ7" secondAttribute="bottom" id="88x-LG-dUH"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="bottom" secondItem="kQg-yf-bZ7" secondAttribute="bottom" id="8lf-u7-WNX"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="top" secondItem="h2T-Mt-Ij4" secondAttribute="bottom" constant="10" id="Cxn-mr-FUe"/>
+                            <constraint firstItem="h2T-Mt-Ij4" firstAttribute="centerX" secondItem="uGy-Y9-bfW" secondAttribute="centerX" id="KHC-dC-mi6"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="leading" secondItem="kQg-yf-bZ7" secondAttribute="leading" id="L9Z-ro-N0p"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="trailing" secondItem="kQg-yf-bZ7" secondAttribute="trailing" id="Lam-UG-gwT"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="trailing" secondItem="kQg-yf-bZ7" secondAttribute="trailing" id="Ntb-i7-HF6"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="trailing" secondItem="kQg-yf-bZ7" secondAttribute="trailing" id="cjM-pK-XsD"/>
+                            <constraint firstItem="yU3-1K-T59" firstAttribute="leading" secondItem="kQg-yf-bZ7" secondAttribute="leading" id="jAM-LV-zyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J5Z-GE-e4P">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="yU3-1K-T59" id="8FQ-gr-KdS"/>
+                        <outlet property="hotelsButton" destination="SjH-bk-JxO" id="6cG-QW-lUa"/>
+                        <outlet property="restaurantsButton" destination="vrH-Ad-2VF" id="XAU-EO-5nH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zg-jw-ZdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081.679389312977" y="703.52112676056345"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="la1-9P-NMu">
+            <objects>
+                <navigationController storyboardIdentifier="detailsNC" automaticallyAdjustsScrollViewInsets="NO" id="GV8-Ee-ruf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Details" image="doc.text.magnifyingglass" catalog="system" id="8LG-aU-WfA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ada-Mn-tzW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1dl-Me-9uu" kind="relationship" relationship="rootViewController" id="Qxi-kU-nmc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3K-kc-5Zc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154.96183206106869" y="703.52112676056345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="building.2.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="doc.text.magnifyingglass" catalog="system" width="110" height="128"/>
+        <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

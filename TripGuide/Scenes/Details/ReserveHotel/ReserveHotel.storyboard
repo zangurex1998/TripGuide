@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reserve Hotel View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="reserveHotel" id="Y6W-OH-hqX" customClass="ReserveHotelViewController" customModule="TouristGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="910"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-NW-oZk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Mfz-7M-jKB"/>
+                                    <constraint firstAttribute="width" constant="393" id="OP9-3H-R0z"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-mN-LbP">
+                                <rect key="frame" x="0.0" y="362" width="393" height="514"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqi-eB-o7Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="514"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAj-kD-lWs">
+                                                <rect key="frame" x="20" y="30" width="353" height="40"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="36"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vdh-TQ-HFq">
+                                                <rect key="frame" x="20" y="126" width="156.66666666666666" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfH-VN-vjL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="32"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="32"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-VG-mPy">
+                                                        <rect key="frame" x="83.333333333333343" y="0.0" width="73.333333333333343" height="32"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="23"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tra-5S-fAb">
+                                                <rect key="frame" x="20" y="81" width="65.666666666666671" height="14"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieE-o1-P0X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30.333333333333332" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bC-mb-63N">
+                                                        <rect key="frame" x="35.333333333333336" y="0.0" width="30.333333333333336" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2M-YK-nLg">
+                                                <rect key="frame" x="20" y="190" width="152.66666666666666" height="29"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptionlabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfz-t3-8t7">
+                                                <rect key="frame" x="20" y="229" width="363" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbC-Ks-gxh">
+                                                <rect key="frame" x="69.666666666666686" y="384" width="254" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="254" id="Kan-lT-hRH"/>
+                                                    <constraint firstAttribute="height" constant="51" id="uT1-8d-oTP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Book Now"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGb-8h-m6P">
+                                                <rect key="frame" x="20" y="281" width="363" height="26"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKA-65-yUN">
+                                                <rect key="frame" x="22" y="329" width="351" height="25"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fbC-Ks-gxh" firstAttribute="top" secondItem="bKA-65-yUN" secondAttribute="bottom" constant="30" id="1oD-pW-za9"/>
+                                            <constraint firstItem="lfz-t3-8t7" firstAttribute="top" secondItem="L2M-YK-nLg" secondAttribute="bottom" constant="10" id="3sz-Z9-ygH"/>
+                                            <constraint firstItem="tra-5S-fAb" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="20" id="5qe-fZ-uzX"/>
+                                            <constraint firstItem="lfz-t3-8t7" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="20" id="7bj-aS-asV"/>
+                                            <constraint firstAttribute="trailing" secondItem="lfz-t3-8t7" secondAttribute="trailing" constant="10" id="8oL-Oa-TPI"/>
+                                            <constraint firstItem="Vdh-TQ-HFq" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="20" id="ABb-U8-dEF"/>
+                                            <constraint firstItem="PGb-8h-m6P" firstAttribute="top" secondItem="lfz-t3-8t7" secondAttribute="bottom" constant="32" id="Cdl-4w-8za"/>
+                                            <constraint firstAttribute="bottom" secondItem="fbC-Ks-gxh" secondAttribute="bottom" constant="79" id="Eyj-1m-V4O"/>
+                                            <constraint firstItem="PGb-8h-m6P" firstAttribute="leading" secondItem="lfz-t3-8t7" secondAttribute="leading" id="Jwc-wJ-7AR"/>
+                                            <constraint firstItem="tra-5S-fAb" firstAttribute="top" secondItem="qAj-kD-lWs" secondAttribute="bottom" constant="11" id="NQd-7n-Ywd"/>
+                                            <constraint firstItem="Vdh-TQ-HFq" firstAttribute="top" secondItem="tra-5S-fAb" secondAttribute="bottom" constant="31" id="Q34-oq-41s"/>
+                                            <constraint firstAttribute="trailing" secondItem="qAj-kD-lWs" secondAttribute="trailing" constant="20" id="SuA-lA-MLn"/>
+                                            <constraint firstItem="PGb-8h-m6P" firstAttribute="trailing" secondItem="lfz-t3-8t7" secondAttribute="trailing" id="Xvg-mh-XS1"/>
+                                            <constraint firstItem="qAj-kD-lWs" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="20" id="bt3-cV-oa8"/>
+                                            <constraint firstItem="fbC-Ks-gxh" firstAttribute="centerX" secondItem="Eqi-eB-o7Y" secondAttribute="centerX" id="dlj-qE-RRm"/>
+                                            <constraint firstAttribute="trailing" secondItem="bKA-65-yUN" secondAttribute="trailing" constant="20" id="efN-LN-RWE"/>
+                                            <constraint firstItem="L2M-YK-nLg" firstAttribute="top" secondItem="Vdh-TQ-HFq" secondAttribute="bottom" constant="32" id="el8-lr-e22"/>
+                                            <constraint firstItem="bKA-65-yUN" firstAttribute="top" secondItem="PGb-8h-m6P" secondAttribute="bottom" constant="22" id="fQQ-21-wTm"/>
+                                            <constraint firstItem="qAj-kD-lWs" firstAttribute="top" secondItem="Eqi-eB-o7Y" secondAttribute="top" constant="30" id="oh8-Sc-Xot"/>
+                                            <constraint firstItem="bKA-65-yUN" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="22" id="wpR-Z3-Rw3"/>
+                                            <constraint firstItem="L2M-YK-nLg" firstAttribute="leading" secondItem="Eqi-eB-o7Y" secondAttribute="leading" constant="20" id="yd4-QH-ryH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Eqi-eB-o7Y" firstAttribute="width" secondItem="qtn-mN-LbP" secondAttribute="width" id="0a9-xO-yBE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Eqi-eB-o7Y" secondAttribute="bottom" id="744-j1-Ckn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eqi-eB-o7Y" secondAttribute="trailing" id="7xm-tK-B7D"/>
+                                    <constraint firstItem="Eqi-eB-o7Y" firstAttribute="top" secondItem="qtn-mN-LbP" secondAttribute="top" id="Jie-fW-VPk"/>
+                                    <constraint firstItem="Eqi-eB-o7Y" firstAttribute="height" secondItem="qtn-mN-LbP" secondAttribute="height" priority="250" id="Rk9-wZ-MeJ"/>
+                                    <constraint firstItem="Eqi-eB-o7Y" firstAttribute="leading" secondItem="qtn-mN-LbP" secondAttribute="leading" id="rnW-x0-at1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gxH-p6-Bqo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="DMh-nd-YHX"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qtn-mN-LbP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="BQG-Oj-xWA"/>
+                            <constraint firstItem="qtn-mN-LbP" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ONL-BS-3td"/>
+                            <constraint firstItem="dDB-NW-oZk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Q41-BP-JdY"/>
+                            <constraint firstItem="qtn-mN-LbP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="303" id="YFn-3o-BIL"/>
+                            <constraint firstItem="qtn-mN-LbP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jDi-4m-qJi"/>
+                            <constraint firstAttribute="trailing" secondItem="dDB-NW-oZk" secondAttribute="trailing" id="lSi-hb-p02"/>
+                            <constraint firstItem="dDB-NW-oZk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="s8W-50-ogg"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="910"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="bKA-65-yUN" id="Yad-Dx-nf6"/>
+                        <outlet property="bookButton" destination="fbC-Ks-gxh" id="hf4-Z6-ur5"/>
+                        <outlet property="bookView" destination="Eqi-eB-o7Y" id="4Xu-Ck-oA1"/>
+                        <outlet property="cityLbl" destination="ieE-o1-P0X" id="BWf-mu-lb6"/>
+                        <outlet property="descriptiontlbl" destination="lfz-t3-8t7" id="oRy-IZ-qun"/>
+                        <outlet property="hotelImage" destination="dDB-NW-oZk" id="l9t-W6-ulJ"/>
+                        <outlet property="hotelName" destination="qAj-kD-lWs" id="fJX-S8-4Vk"/>
+                        <outlet property="priceLbl" destination="cfH-VN-vjL" id="bDU-2Z-jnr"/>
+                        <outlet property="rateLbl" destination="0bC-mb-63N" id="kGO-fM-Xox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
