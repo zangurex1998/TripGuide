@@ -8,6 +8,18 @@
 import UIKit
 import Kingfisher
 import CoreData
+
+//enum OneCase: [NSEntityDescription], CaseIterable {
+//
+//    case fetchedFavorites
+//     
+//     var changeCategory : OneCase {
+//        switch self {
+//        case .fetchedFavorites:
+//            return Favourite
+//        }
+//    }
+//}
 class FavouritesTableViewCell: UITableViewCell {
     
     
@@ -57,6 +69,7 @@ extension FavouritesTableViewCell: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let result = forTableView[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoritesCollectionViewCell", for: indexPath) as! FavoritesCollectionViewCell
         
