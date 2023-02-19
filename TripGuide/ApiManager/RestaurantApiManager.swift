@@ -12,7 +12,7 @@ protocol RestaurantApiManagerProtocol{
 
 class RestaurantApiManager: RestaurantApiManagerProtocol{
     func fetchingHotels(completion: @escaping (RestaurantResponse) -> ()) {
-        guard let url = URL(string: "https://run.mocky.io/v3/601e9d45-1ace-4e57-a03b-be00ea21fc7a"  ) else {return}
+        guard let url = URL(string: "https://run.mocky.io/v3/601e9d45-1ace-4e57-a03b-be00ea21fc7a") else {return}
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error{
                 print(error)

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeasidesCollectionViewCell" id="gTV-IL-0wX" customClass="SeasidesCollectionViewCell" customModule="TripGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T0q-7D-ol9">
+                        <rect key="frame" x="10" y="10" width="161" height="134.66666666666666"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="161" id="K7A-Dw-SPS"/>
+                            <constraint firstAttribute="height" constant="134.66999999999999" id="Ka2-gw-8lD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euc-RI-w58">
+                        <rect key="frame" x="10" y="154.66666666666666" width="161" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T0q-7D-ol9" secondAttribute="trailing" constant="10" id="9sR-0F-t8M"/>
+                <constraint firstItem="T0q-7D-ol9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Dx3-af-wO7"/>
+                <constraint firstItem="euc-RI-w58" firstAttribute="top" secondItem="T0q-7D-ol9" secondAttribute="bottom" constant="10" id="Ni3-Pd-XtQ"/>
+                <constraint firstItem="T0q-7D-ol9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="RaX-4t-dav"/>
+                <constraint firstItem="T0q-7D-ol9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="h94-VJ-WRl"/>
+                <constraint firstAttribute="bottom" secondItem="euc-RI-w58" secondAttribute="bottom" constant="14" id="iPf-wj-SRd"/>
+                <constraint firstItem="T0q-7D-ol9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="keJ-z2-tpM"/>
+                <constraint firstItem="euc-RI-w58" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="oAE-bs-Hp8"/>
+                <constraint firstAttribute="trailing" secondItem="euc-RI-w58" secondAttribute="trailing" constant="10" id="v1E-wT-TUC"/>
+            </constraints>
+            <size key="customSize" width="181" height="189"/>
+            <connections>
+                <outlet property="beachName" destination="euc-RI-w58" id="bmc-pf-JG7"/>
+                <outlet property="seaImage" destination="T0q-7D-ol9" id="DdW-EL-tHe"/>
+            </connections>
+            <point key="canvasLocation" x="75.572519083969468" y="-0.35211267605633806"/>
+        </collectionViewCell>
+    </objects>
+</document>
