@@ -46,9 +46,9 @@ class DetailsViewController: UIViewController {
             self?.restaurant = restaurants.restaurants
         }
         navigationItem.backButtonTitle = ""
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray
         setUpSearchController()
-       
+        
     }
    
 
@@ -104,6 +104,7 @@ class DetailsViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "RestaurantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RestaurantCollectionViewCell")
         collectionView.register(UINib(nibName: "HotelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HotelCollectionViewCell")
+        collectionView.backgroundColor = .systemGray
    
 
     }

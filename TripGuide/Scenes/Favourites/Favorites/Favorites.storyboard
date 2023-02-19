@@ -16,23 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-am-Qr2">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-Q4-Fk8">
+                                <rect key="frame" x="10" y="108" width="373" height="32"/>
+                                <segments>
+                                    <segment title="Mountains"/>
+                                    <segment title="Seaside"/>
+                                </segments>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <connections>
+                                    <action selector="didTapSegmentedControl:" destination="Y6W-OH-hqX" eventType="valueChanged" id="enj-Ad-E9T"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JME-rJ-B0Y">
+                                <rect key="frame" x="0.0" y="149" width="393" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OHf-0a-3Rl">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="w8w-am-Qr2" secondAttribute="bottom" id="QTL-nJ-VUF"/>
-                            <constraint firstItem="w8w-am-Qr2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bsR-aD-X17"/>
-                            <constraint firstItem="w8w-am-Qr2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="p0u-vu-Xac"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="w8w-am-Qr2" secondAttribute="trailing" id="yNK-2F-m5W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EDx-Q4-Fk8" secondAttribute="trailing" constant="10" id="1hw-Le-Zub"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JME-rJ-B0Y" secondAttribute="bottom" id="Ep9-hJ-tbB"/>
+                            <constraint firstItem="EDx-Q4-Fk8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="Gc7-f7-Or9"/>
+                            <constraint firstItem="JME-rJ-B0Y" firstAttribute="top" secondItem="EDx-Q4-Fk8" secondAttribute="bottom" constant="10" id="UTk-hR-lds"/>
+                            <constraint firstItem="EDx-Q4-Fk8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="XPe-em-BVA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JME-rJ-B0Y" secondAttribute="trailing" id="utH-q0-QXn"/>
+                            <constraint firstItem="JME-rJ-B0Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yfA-tc-9Hg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2eV-5e-MKy"/>
                     <connections>
-                        <outlet property="tableView" destination="w8w-am-Qr2" id="SDc-vo-kNf"/>
+                        <outlet property="collectionView" destination="JME-rJ-B0Y" id="b21-RW-V39"/>
+                        <outlet property="segmentControl" destination="EDx-Q4-Fk8" id="inw-bt-N0V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -61,6 +83,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class FavoritesCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var cityImage: UIImageView!
@@ -15,9 +15,11 @@ class FavoritesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         cityImage.layer.cornerRadius = 60
         cityImage.layer.borderColor = UIColor.red.cgColor
-        cityImage.layer.borderWidth = 1 
+        cityImage.layer.borderWidth = 1
+
         
     }
+  
     
     
     

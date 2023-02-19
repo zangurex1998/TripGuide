@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802C6E2D299FD28500741CA8 /* Favorites.storyboard */; };
-		802C6E30299FD9A300741CA8 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C6E2F299FD9A300741CA8 /* FavouritesTableViewCell.swift */; };
-		802C6E32299FD9AC00741CA8 /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802C6E31299FD9AC00741CA8 /* FavouritesTableViewCell.xib */; };
 		80919121299FC74A00850F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919120299FC74A00850F46 /* AppDelegate.swift */; };
 		80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919122299FC74A00850F46 /* SceneDelegate.swift */; };
 		8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80919129299FC74B00850F46 /* TripGuide.xcdatamodeld */; };
@@ -47,12 +45,21 @@
 		8091918E299FCA8800850F46 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8091918B299FCA8800850F46 /* Restaurant.swift */; };
 		8091918F299FCA8800850F46 /* hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8091918C299FCA8800850F46 /* hotel.swift */; };
 		80919197299FCAE800850F46 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80919196299FCAE800850F46 /* Kingfisher */; };
+		80B2639729A1509300A0F3EF /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919192299FCAA100850F46 /* Gilroy-Bold.ttf */; };
+		80B2639829A1509500A0F3EF /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919191299FCAA100850F46 /* Gilroy-Regular.ttf */; };
+		80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80919193299FCAA100850F46 /* Gotham-Bold.otf */; };
+		80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */; };
+		80BCE77929A12476001E0E5D /* seaside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77829A12476001E0E5D /* seaside.swift */; };
+		80BCE77C29A12920001E0E5D /* SeasidesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77A29A12920001E0E5D /* SeasidesCollectionViewCell.swift */; };
+		80BCE77D29A12920001E0E5D /* SeasidesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80BCE77B29A12920001E0E5D /* SeasidesCollectionViewCell.xib */; };
+		80E5F9B929A0A05500A4E4C6 /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E5F9B829A0A05500A4E4C6 /* Blog.storyboard */; };
+		80E5F9BB29A0A06900A4E4C6 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5F9BA29A0A06900A4E4C6 /* BlogViewController.swift */; };
+		80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */; };
+		80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		802C6E2D299FD28500741CA8 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
-		802C6E2F299FD9A300741CA8 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
-		802C6E31299FD9AC00741CA8 /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		8091911D299FC74A00850F46 /* TripGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80919120299FC74A00850F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80919122299FC74A00850F46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +101,14 @@
 		80919191299FCAA100850F46 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		80919192299FCAA100850F46 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		80919193299FCAA100850F46 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideApiManager.swift; sourceTree = "<group>"; };
+		80BCE77829A12476001E0E5D /* seaside.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seaside.swift; sourceTree = "<group>"; };
+		80BCE77A29A12920001E0E5D /* SeasidesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasidesCollectionViewCell.swift; sourceTree = "<group>"; };
+		80BCE77B29A12920001E0E5D /* SeasidesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasidesCollectionViewCell.xib; sourceTree = "<group>"; };
+		80E5F9B829A0A05500A4E4C6 /* Blog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
+		80E5F9BA29A0A06900A4E4C6 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideTableViewCell.swift; sourceTree = "<group>"; };
+		80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasideTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,10 +240,12 @@
 		8091914D299FC8F500850F46 /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
-				80919198299FCCE700850F46 /* FavoritesCollectionView */,
+				80FCEDB129A13E490032BB39 /* SeasideTableView */,
+				80919198299FCCE700850F46 /* SeaSidesCollectionViewCell */,
 				802C6E2C299FD27600741CA8 /* Favorites */,
 				80919153299FC95C00850F46 /* FavoritesCollectionViewCell.swift */,
 				80919151299FC95C00850F46 /* FavoritesCollectionViewCell.xib */,
+				80E5F9B729A0A03A00A4E4C6 /* BlogPage */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -325,6 +342,7 @@
 				80919183299FCA7900850F46 /* hotelsAPIManager.swift */,
 				80919184299FCA7900850F46 /* PlacesAPIManager.swift */,
 				80919185299FCA7900850F46 /* RestaurantApiManager.swift */,
+				80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -335,6 +353,7 @@
 				8091918A299FCA8800850F46 /* City.swift */,
 				8091918C299FCA8800850F46 /* hotel.swift */,
 				8091918B299FCA8800850F46 /* Restaurant.swift */,
+				80BCE77829A12476001E0E5D /* seaside.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,13 +368,31 @@
 			path = CustomFonts;
 			sourceTree = "<group>";
 		};
-		80919198299FCCE700850F46 /* FavoritesCollectionView */ = {
+		80919198299FCCE700850F46 /* SeaSidesCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				802C6E31299FD9AC00741CA8 /* FavouritesTableViewCell.xib */,
-				802C6E2F299FD9A300741CA8 /* FavouritesTableViewCell.swift */,
+				80BCE77A29A12920001E0E5D /* SeasidesCollectionViewCell.swift */,
+				80BCE77B29A12920001E0E5D /* SeasidesCollectionViewCell.xib */,
 			);
-			path = FavoritesCollectionView;
+			path = SeaSidesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		80E5F9B729A0A03A00A4E4C6 /* BlogPage */ = {
+			isa = PBXGroup;
+			children = (
+				80E5F9B829A0A05500A4E4C6 /* Blog.storyboard */,
+				80E5F9BA29A0A06900A4E4C6 /* BlogViewController.swift */,
+			);
+			path = BlogPage;
+			sourceTree = "<group>";
+		};
+		80FCEDB129A13E490032BB39 /* SeasideTableView */ = {
+			isa = PBXGroup;
+			children = (
+				80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */,
+				80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */,
+			);
+			path = SeasideTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,18 +459,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
 				80919140299FC85B00850F46 /* Main.storyboard in Resources */,
 				80919155299FC95C00850F46 /* FavoritesCollectionViewCell.xib in Resources */,
+				80B2639729A1509300A0F3EF /* Gilroy-Bold.ttf in Resources */,
 				8091917B299FCA3200850F46 /* Explore.storyboard in Resources */,
 				80919177299FCA1800850F46 /* ExploreTableViewCell.xib in Resources */,
-				802C6E32299FD9AC00741CA8 /* FavouritesTableViewCell.xib in Resources */,
+				80B2639829A1509500A0F3EF /* Gilroy-Regular.ttf in Resources */,
 				80919167299FC9BC00850F46 /* RestaurantCollectionViewCell.xib in Resources */,
 				80919171299FC9DD00850F46 /* Details.storyboard in Resources */,
+				80BCE77D29A12920001E0E5D /* SeasidesCollectionViewCell.xib in Resources */,
 				8091916D299FC9D200850F46 /* HotelCollectionViewCell.xib in Resources */,
 				80919130299FC74C00850F46 /* LaunchScreen.storyboard in Resources */,
+				80E5F9B929A0A05500A4E4C6 /* Blog.storyboard in Resources */,
 				80919181299FCA4900850F46 /* CityDetail.storyboard in Resources */,
 				8091912D299FC74C00850F46 /* Assets.xcassets in Resources */,
+				80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */,
 				8091915D299FC98500850F46 /* ReserveHotel.storyboard in Resources */,
 				8091914B299FC8E500850F46 /* Settings.storyboard in Resources */,
 				802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */,
@@ -453,23 +495,27 @@
 				80919121299FC74A00850F46 /* AppDelegate.swift in Sources */,
 				80919158299FC95C00850F46 /* FavoriteViewController.swift in Sources */,
 				80919180299FCA4900850F46 /* CityDetailsViewController.swift in Sources */,
+				80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */,
 				8091915E299FC98500850F46 /* ReserveHotelViewController.swift in Sources */,
 				80919186299FCA7900850F46 /* hotelsAPIManager.swift in Sources */,
 				8091917C299FCA3200850F46 /* ExploreViewController.swift in Sources */,
+				80BCE77929A12476001E0E5D /* seaside.swift in Sources */,
 				80919188299FCA7900850F46 /* RestaurantApiManager.swift in Sources */,
 				80919146299FC8C700850F46 /* Extension+UIColor.swift in Sources */,
 				80919157299FC95C00850F46 /* FavoritesCollectionViewCell.swift in Sources */,
 				80919176299FCA1800850F46 /* ExploreTableViewCell.swift in Sources */,
 				8091914C299FC8E500850F46 /* SettingsViewController.swift in Sources */,
 				8091916C299FC9D200850F46 /* HotelCollectionViewCell.swift in Sources */,
+				80BCE77C29A12920001E0E5D /* SeasidesCollectionViewCell.swift in Sources */,
 				80919142299FC86D00850F46 /* TabBarController.swift in Sources */,
 				80919147299FC8C700850F46 /* Extension+TabBarExtension.swift in Sources */,
 				80919168299FC9BC00850F46 /* RestaurantCollectionViewCell.swift in Sources */,
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
-				802C6E30299FD9A300741CA8 /* FavouritesTableViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
+				80E5F9BB29A0A06900A4E4C6 /* BlogViewController.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,
+				80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */,
 				8091918D299FCA8800850F46 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
