@@ -34,7 +34,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.gray.cgColor
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
-        self.backgroundColor = UIColor(hex: "011627")
+        self.backgroundColor = .black
         bookLbl.layer.masksToBounds = true
         bookLbl.layer.cornerRadius = 10
         

@@ -15,7 +15,7 @@ protocol HotelApiManagerProtocol{
 
 class HotelApiManager: HotelApiManagerProtocol{
     func fetchingHotels(completion: @escaping (HotelResponse) -> ()) {
-        guard let url = URL(string: "https://run.mocky.io/v3/776ae8c9-961c-4e81-aa34-10418b4e4406"  ) else {return}
+        guard let url = URL(string: "https://run.mocky.io/v3/301f818c-66ff-44fa-919c-e1aea596e936"  ) else {return}
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error{
                 print(error)

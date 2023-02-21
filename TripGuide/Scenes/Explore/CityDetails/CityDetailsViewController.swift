@@ -12,7 +12,6 @@ class CityDetailsViewController: UIViewController {
     
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var detailLbl: UILabel!
-    
     var image: String?
     var details: String?
     var pageTitle: String?
@@ -24,20 +23,17 @@ class CityDetailsViewController: UIViewController {
         print(paths)
         setUpView()
         navigationItem.backButtonTitle = ""
-        configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "a9e3e8"), tintColor: .red, title: pageTitle!, preferredLargeTitle: false)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: pageTitle!, preferredLargeTitle: false)
     }
  
     
-    deinit{
-        print("Deinited and no memory Leaks anymore!")
-    }
     
     
   
     
     private func setUpView(){
         cityImage.kf.setImage(with: URL(string: image!))
-        cityImage.kf.indicatorType = .activity
+       
         detailLbl.text = details
         setRightButton()
     }

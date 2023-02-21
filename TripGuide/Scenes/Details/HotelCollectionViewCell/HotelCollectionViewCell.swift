@@ -14,18 +14,18 @@ class HotelCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var hotelsName: UILabel!
     
-    @IBOutlet weak var detailedLocation: UILabel!
+//    @IBOutlet weak var detailedLocation: UILabel!
     
     @IBOutlet weak var hotelRate: UILabel!
     
-    @IBOutlet weak var hotelsLocation: UILabel!
+//    @IBOutlet weak var hotelsLocation: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
        setUpContentView()
         self.layer.borderColor = UIColor.gray.cgColor
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
-        self.backgroundColor = UIColor(hex: "011627")
+        self.backgroundColor = .black
         
      
         
@@ -37,9 +37,9 @@ class HotelCollectionViewCell: UICollectionViewCell {
         reserve.layer.masksToBounds = true
         reserve.layer.cornerRadius = 10
         hotelsName.textColor = .white
-        detailedLocation.textColor = .white
+//        detailedLocation.textColor = .white
         hotelRate.textColor = .white
-        hotelsLocation.textColor = .white
+//        hotelsLocation.textColor = .white
         
 
     }
@@ -49,8 +49,8 @@ class HotelCollectionViewCell: UICollectionViewCell {
         hotelsName.text = hotels.name
         hotelRate.text = String("⭐️ \(hotels.rate)" )
         hotelImage.kf.setImage(with: URL(string: hotels.image))
-        hotelsLocation.text = hotels.city
-        detailedLocation.text = hotels.location
+//        hotelsLocation.text = hotels.city
+//        detailedLocation.text = hotels.location
     }
 
 }
