@@ -13,7 +13,7 @@ protocol SeasideApiManagerProtocol{
 
 class SeasideApiManager: SeasideApiManagerProtocol{    
     func fetchingSeasides(completion: @escaping (SeasidesResponse) -> ()) {
-        guard let url = URL(string: "https://run.mocky.io/v3/8c2b8e94-53f8-4613-b500-6471b6034929") else {return}
+        guard let url = URL(string: "https://run.mocky.io/v3/7ec55407-c36e-4f36-af8f-eeb0f0f47aa5") else {return}
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error{
                 print(error)
