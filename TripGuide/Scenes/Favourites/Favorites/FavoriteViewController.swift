@@ -115,9 +115,12 @@ extension FavoriteViewController: UITableViewDataSource{
 }
 extension FavoriteViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row > 0{
+        if indexPath.row == 1{
             let vc = UIStoryboard(name: "ResortHotels", bundle: nil).instantiateViewController(withIdentifier: "resortView")
             navigationController?.pushViewController(vc, animated: true) 
+        } else if indexPath.row == 0 {
+            let vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewController(withIdentifier: "summer")
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
