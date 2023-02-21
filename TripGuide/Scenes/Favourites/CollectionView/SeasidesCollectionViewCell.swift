@@ -16,20 +16,22 @@ class SeasidesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpContentView()
-        self.backgroundColor = UIColor.white
+        
         self.layer.cornerRadius = 10
-        self.layer.borderWidth = 2
-        self.layer.borderColor = UIColor.lightGray.cgColor
-        beachName.textColor = .darkGray
+        
     }
-    
-    
-    func configure(with sea: Seasides){
-        seaImage.kf.setImage(with: URL(string: sea.image))
-        beachName.text = sea.beach
+        
+        func configure(with sea: Seasides){
+            seaImage.kf.setImage(with: URL(string: sea.image))
+            beachName.text = sea.beach
+        }
+        
+       
+        func setUpContentView(){
+            seaImage.layer.cornerRadius = 10
+            beachName.layer.masksToBounds = true
+            beachName.textAlignment = .center
+        }
+        
     }
-    func setUpContentView(){
-        seaImage.layer.cornerRadius = 10
-    }
-    
-}
+

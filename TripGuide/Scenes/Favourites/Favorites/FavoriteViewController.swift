@@ -9,16 +9,11 @@ import UIKit
 import CoreData
 import Kingfisher
 
-enum SegmentedControlC {
-    case seaside
-    case city
-}
 class FavoriteViewController: UIViewController {
         
     //MARK: - Outlets
     
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
 
     
@@ -33,19 +28,20 @@ class FavoriteViewController: UIViewController {
   
     
     var seasideManager: SeasideApiManagerProtocol = SeasideApiManager()
-    var fetchFavorites: HotelApiManagerProtocol = HotelApiManager()
-    var options: SegmentedControlC = .seaside
+    var winterManager: WinterApiManagerProtocol = WinterApiManager()
     
-    var fetchedHotels: [Hotels] = [] {
+    
+    var winterFetched: [Winter] = [] {
         didSet{
-            self.collectionView.reloadData()
+            self.tableView.reloadData()
         }
     }
     
-    var seaFetched: [Seasides] = []{
+    lazy var seaFetched: [Seasides] = []{
         didSet{
-            self.collectionView.reloadData()
+            self.tableView.reloadData()
         }
+       
     }
     
     
@@ -53,15 +49,21 @@ class FavoriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpCollectionView()
+        setUpTableView()
         setUpSegmentedControll()
-        view.backgroundColor = .systemGray
+       
         navigationController?.tabBarItem.title = "Recomended"
         navigationController?.tabBarItem.image = UIImage(systemName: "heart.fill")
         configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Suggestions", preferredLargeTitle: true)
         seasideManager.fetchingSeasides {[weak self] sea in
             self?.seaFetched = sea.seasides
         }
+        winterManager.fetchingHotels {[weak self] winterCome in
+            self?.winterFetched = winterCome.winter
+            print(winterCome.winter)
+        }
+        navigationItem.backButtonTitle = ""
+      
     }
   
     
@@ -79,45 +81,46 @@ class FavoriteViewController: UIViewController {
         
     }
     
-    private func setUpCollectionView(){
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(UINib(nibName: "SeasidesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeasidesCollectionViewCell")
-        collectionView.register(UINib(nibName: "HotelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HotelCollectionViewCell")
-        collectionView.backgroundColor = .systemGray
+    private func setUpTableView(){
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "SeasideTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasideTableViewCell")
+        tableView.register(UINib(nibName: "WinterTableViewCell", bundle: nil), forCellReuseIdentifier: "WinterTableViewCell")
+        tableView.backgroundColor = .black
+        tableView.delegate = self
         
-       
+        
     }
-    
+
 
 }
-extension FavoriteViewController: UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(seaFetched.count)
-        return seaFetched.count
-        
-    
-       
+
+extension FavoriteViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SeasidesCollectionViewCell", for: indexPath) as! SeasidesCollectionViewCell
-                cell.configure(with: seaFetched[indexPath.row])
-                return cell
-        
-            }
-        
-      
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let secondCell = tableView.dequeueReusableCell(withIdentifier: "SeasideTableViewCell", for: indexPath) as! SeasideTableViewCell
+            secondCell.seaside = seaFetched
+            return secondCell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "WinterTableViewCell", for: indexPath) as! WinterTableViewCell
+            cell.winter = winterFetched
+            return cell
+        }
+    }
+    
     
 }
-
-extension FavoriteViewController: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+extension FavoriteViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row > 0{
+            let vc = UIStoryboard(name: "ResortHotels", bundle: nil).instantiateViewController(withIdentifier: "resortView")
+            navigationController?.pushViewController(vc, animated: true) 
+        }
     }
 }
-
 
 
   

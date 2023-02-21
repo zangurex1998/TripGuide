@@ -1,28 +1,23 @@
 //
-//  hotel.swift
-//  TouristGuide
+//  Winter.swift
+//  TripGuide
 //
-//  Created by technomix on 11.02.23.
+//  Created by technomix on 20.02.23.
 //
 
 import Foundation
-
-struct HotelResponse: Codable{
-    let hotels: [Hotels]
+struct WinterResponse: Codable {
+    let winter : [Winter]
 }
-struct Hotels:Codable {
-    let city: String
-    let location: String
+
+struct Winter: Codable {
     let name: String
     let image: String
-    let imageTwo: String
-    let imageThree: String
-    let imageFour: String
-    let imageFive: String
-    let rate: Double
-    let price: String
-    let reserve: Bool
-    let description: String
+    let hotelImage: String
+    let hotelName: String
+    let hotelRate: Double
+    let hotelInfo: String
+    let hotelPrice: String
     let wifi: Bool // amenities
     let gym: Bool // amenities
     let freeParking: Bool // amenitiess
@@ -35,4 +30,6 @@ struct Hotels:Codable {
     let refrigerator: Bool //roomFeatures
     let nonSmokingRoom: Bool // roomFeatures
     let romantic: Bool // roomFeatures
+   
+    let hotelImageTwo: String
 }

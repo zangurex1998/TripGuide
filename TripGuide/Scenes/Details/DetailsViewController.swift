@@ -41,12 +41,12 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         configureButtons()
         setUpCollectionView()
-        configureNavigationBar(largeTitleColor: .white, backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Choose a Category", preferredLargeTitle: false)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Choose a Category", preferredLargeTitle: false)
         restaurantApiManager.fetchingHotels {[weak self] restaurants in
             self?.restaurant = restaurants.restaurants
         }
         navigationItem.backButtonTitle = ""
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .black
         setUpSearchController()
         
     }
@@ -86,7 +86,7 @@ class DetailsViewController: UIViewController {
         searchController.searchBar.placeholder = "Search For city"
         searchController.searchBar.searchTextField.tintColor = .white
         searchController.searchBar.searchTextField.textColor = .white
-        searchController.searchBar.backgroundColor = UIColor(hex: "011627")
+        searchController.searchBar.backgroundColor = .black
     }
     
     private func configureButtons(){
@@ -104,7 +104,7 @@ class DetailsViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "RestaurantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RestaurantCollectionViewCell")
         collectionView.register(UINib(nibName: "HotelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HotelCollectionViewCell")
-        collectionView.backgroundColor = .systemGray
+        collectionView.backgroundColor = .black
    
 
     }
@@ -157,14 +157,26 @@ extension DetailsViewController: UICollectionViewDelegate{
             vc.city = restaurant[indexPath.row].city
             navigationController?.present(vc, animated: true)
         }else if defaultCategory == .hotels{
-            let secondVC = UIStoryboard(name: "ReserveHotel", bundle: nil).instantiateViewController(withIdentifier: "reserveHotel") as! ReserveHotelViewController
-            secondVC.imageString = hotel[indexPath.row].imageThree
-            secondVC.city = hotel[indexPath.row].city
+            let secondVC = UIStoryboard(name: "WinterHDetails", bundle: nil).instantiateViewController(withIdentifier: "WinterHDetails") as! WHotelsDetailsViewController
+            secondVC.hotelString = hotel[indexPath.row].imageThree
+            secondVC.hotelNameTitle = hotel[indexPath.row].city
             secondVC.rate = hotel[indexPath.row].rate
-            secondVC.price = hotel[indexPath.row].price
-            secondVC.hottelname = hotel[indexPath.row].name
-            secondVC.descriptionOf = hotel[indexPath.row].description
-            secondVC.address = hotel[indexPath.row].location
+            secondVC.hotelDescription = hotel[indexPath.row].description
+            secondVC.wifi = hotel[indexPath.row].wifi
+            secondVC.minibar = hotel[indexPath.row].minibar
+            secondVC.breakfast = hotel[indexPath.row].freeBreakfast
+            secondVC.parkingString = hotel[indexPath.row].freeParking
+            secondVC.poolString = hotel[indexPath.row].swimmingPool
+            secondVC.gymString = hotel[indexPath.row].gym
+            
+            secondVC.hotelDescription = hotel[indexPath.row].description
+            secondVC.roomSrvc = hotel[indexPath.row].roomService
+            secondVC.balcony = hotel[indexPath.row].privateBalcony
+            secondVC.noSmoke = hotel[indexPath.row].nonSmokingRoom
+            secondVC.refrig = hotel[indexPath.row].refrigerator
+            secondVC.romantic = hotel[indexPath.row].romantic
+            secondVC.hName = hotel[indexPath.row].name
+            
             navigationController?.present(secondVC, animated: true)
         }
     }

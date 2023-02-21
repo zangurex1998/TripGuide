@@ -8,15 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Favorite View Controller-->
+        <!--Resorts View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="favorites" id="Y6W-OH-hqX" customClass="FavoriteViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resortView" id="Y6W-OH-hqX" customClass="ResortsViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KT2-9b-jnO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-Km-0ga">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -24,38 +24,38 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KT2-9b-jnO" secondAttribute="bottom" id="9BF-1y-EBJ"/>
-                            <constraint firstItem="KT2-9b-jnO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="BZH-W4-Nus"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KT2-9b-jnO" secondAttribute="trailing" id="Hrr-6g-DXY"/>
-                            <constraint firstItem="KT2-9b-jnO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ndL-13-lET"/>
+                            <constraint firstItem="i4M-Km-0ga" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3iB-fL-vh4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="i4M-Km-0ga" secondAttribute="bottom" id="ddb-9W-rg9"/>
+                            <constraint firstItem="i4M-Km-0ga" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dxO-rs-enC"/>
+                            <constraint firstItem="i4M-Km-0ga" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qdh-vF-RMd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2eV-5e-MKy"/>
+                    <navigationItem key="navigationItem" id="FXL-ga-y0U"/>
                     <connections>
-                        <outlet property="tableView" destination="KT2-9b-jnO" id="iWZ-UT-w9d"/>
+                        <outlet property="tableView" destination="i4M-Km-0ga" id="dzQ-jk-xbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014.5038167938931" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="999.23664122137404" y="-34.507042253521128"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="EVT-3q-sAb">
+        <scene sceneID="bKz-GE-ATx">
             <objects>
-                <navigationController storyboardIdentifier="favoritesNC" automaticallyAdjustsScrollViewInsets="NO" id="Gii-Td-hDe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1mo-EO-obU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6E-L4-hIL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ee-bt-0AE">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="XQo-Dm-H2e"/>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="MOR-sC-um0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B28-1K-l6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFp-km-uHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87.786259541984734" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="72.51908396946564" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>

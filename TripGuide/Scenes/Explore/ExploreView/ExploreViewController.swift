@@ -33,7 +33,7 @@ class ExploreViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Explore", preferredLargeTitle: false)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Explore", preferredLargeTitle: false)
         
     }
    

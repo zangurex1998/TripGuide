@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Hotels Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WinterHDetails" id="Y6W-OH-hqX" customClass="WHotelsDetailsViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zik-mf-HV4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="GBg-0h-3rF"/>
+                                    <constraint firstAttribute="width" constant="393" id="ZE7-Eg-IFD"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIg-VX-iSL">
+                                <rect key="frame" x="0.0" y="358" width="393" height="608"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-Vl-79T">
+                                        <rect key="frame" x="0.0" y="-9" width="393" height="608"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-Xe-t5E">
+                                                <rect key="frame" x="20" y="121.66666666666669" width="353" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptionlbl" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-Uo-8ws">
+                                                <rect key="frame" x="20" y="80.333333333333314" width="353" height="21.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="R79-ar-ydM">
+                                                <rect key="frame" x="20" y="151.66666666666669" width="353" height="94"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-rH-Ues">
+                                                        <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="94"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0U-tP-c0r">
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxL-cG-3Ys">
+                                                                <rect key="frame" x="0.0" y="36.333333333333314" width="27.333333333333332" height="21.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="348-8n-Gmk">
+                                                                <rect key="frame" x="0.0" y="72.666666666666686" width="32" height="21.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rQN-ZV-bKx">
+                                                        <rect key="frame" x="226.66666666666666" y="0.0" width="126.33333333333334" height="94"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-wR-pE7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMF-f6-yXd">
+                                                                <rect key="frame" x="0.0" y="36.333333333333314" width="27.333333333333332" height="21.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-tF-tAT">
+                                                                <rect key="frame" x="0.0" y="72.666666666666686" width="32" height="21.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                                <color key="textColor" systemColor="systemCyanColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8L-Xm-l6A">
+                                                <rect key="frame" x="20" y="50.333333333333314" width="353" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xso-xg-hzG">
+                                                <rect key="frame" x="15" y="17" width="363" height="25.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="hotelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-yt-qmD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127.33333333333333" height="25.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djr-Em-GA4">
+                                                        <rect key="frame" x="132.33333333333337" y="2.6666666666666856" width="230.66666666666663" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Features" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdj-jD-OP8">
+                                                <rect key="frame" x="20" y="265.66666666666663" width="353" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-VJ-d9d">
+                                                <rect key="frame" x="20" y="295.66666666666663" width="363" height="186.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXq-WV-kBI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="363" height="21.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-Np-NYb">
+                                                        <rect key="frame" x="0.0" y="41.333333333333371" width="363" height="21.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPn-nq-aBI">
+                                                        <rect key="frame" x="0.0" y="82.666666666666742" width="363" height="21.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kno-NB-x3Q">
+                                                        <rect key="frame" x="0.0" y="123.99999999999999" width="363" height="21.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-YK-vth">
+                                                        <rect key="frame" x="0.0" y="165.33333333333337" width="363" height="21.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                        <color key="textColor" systemColor="systemCyanColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="fOj-YK-vth" secondAttribute="trailing" id="2et-5T-Hfd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jXq-WV-kBI" secondAttribute="trailing" id="GLd-4i-lkP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kno-NB-x3Q" secondAttribute="trailing" id="Qcx-3z-H69"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zPn-nq-aBI" secondAttribute="trailing" id="WC7-pL-THl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OhN-Np-NYb" secondAttribute="trailing" id="aNd-pY-nSi"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5hh-Uo-8ws" secondAttribute="trailing" constant="20" id="2EP-LS-PTY"/>
+                                            <constraint firstItem="R79-ar-ydM" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="4w8-WJ-Uig"/>
+                                            <constraint firstAttribute="bottom" secondItem="TLi-VJ-d9d" secondAttribute="bottom" constant="125.67" id="5RA-10-DNf"/>
+                                            <constraint firstItem="Hfd-Xe-t5E" firstAttribute="trailing" secondItem="s8L-Xm-l6A" secondAttribute="trailing" id="8tV-J0-5Kp"/>
+                                            <constraint firstItem="TLi-VJ-d9d" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="BnE-EF-dJh"/>
+                                            <constraint firstItem="s8L-Xm-l6A" firstAttribute="top" secondItem="xso-xg-hzG" secondAttribute="bottom" constant="8" id="CWS-nU-28c"/>
+                                            <constraint firstAttribute="trailing" secondItem="R79-ar-ydM" secondAttribute="trailing" constant="20" id="G5E-7f-54g"/>
+                                            <constraint firstItem="xso-xg-hzG" firstAttribute="top" secondItem="Rfu-Vl-79T" secondAttribute="top" constant="17" id="GtW-wu-dcF"/>
+                                            <constraint firstItem="5hh-Uo-8ws" firstAttribute="top" secondItem="s8L-Xm-l6A" secondAttribute="bottom" constant="10" id="Hb3-tD-Znj"/>
+                                            <constraint firstItem="gdj-jD-OP8" firstAttribute="top" secondItem="R79-ar-ydM" secondAttribute="bottom" constant="20" id="IDn-8c-7UG"/>
+                                            <constraint firstItem="Hfd-Xe-t5E" firstAttribute="leading" secondItem="s8L-Xm-l6A" secondAttribute="leading" id="M1S-ht-mBS"/>
+                                            <constraint firstItem="gdj-jD-OP8" firstAttribute="leading" secondItem="Hfd-Xe-t5E" secondAttribute="leading" id="QlG-Oh-OcO"/>
+                                            <constraint firstItem="s8L-Xm-l6A" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="TeJ-cp-ZdB"/>
+                                            <constraint firstAttribute="trailing" secondItem="s8L-Xm-l6A" secondAttribute="trailing" constant="20" id="VbN-nK-fVP"/>
+                                            <constraint firstItem="R79-ar-ydM" firstAttribute="top" secondItem="Hfd-Xe-t5E" secondAttribute="bottom" constant="10" id="eMu-2X-ZyB"/>
+                                            <constraint firstAttribute="trailing" secondItem="TLi-VJ-d9d" secondAttribute="trailing" constant="10" id="gWU-Ep-YVv"/>
+                                            <constraint firstItem="xso-xg-hzG" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="15" id="hzb-GB-2Kj"/>
+                                            <constraint firstItem="5hh-Uo-8ws" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="kJj-tc-WpN"/>
+                                            <constraint firstItem="TLi-VJ-d9d" firstAttribute="top" secondItem="gdj-jD-OP8" secondAttribute="bottom" constant="10" id="pXZ-nH-Beh"/>
+                                            <constraint firstAttribute="trailing" secondItem="xso-xg-hzG" secondAttribute="trailing" constant="15" id="rrE-Mt-t2W"/>
+                                            <constraint firstItem="Hfd-Xe-t5E" firstAttribute="top" secondItem="5hh-Uo-8ws" secondAttribute="bottom" constant="20" id="yf9-mR-5wd"/>
+                                            <constraint firstItem="gdj-jD-OP8" firstAttribute="trailing" secondItem="Hfd-Xe-t5E" secondAttribute="trailing" id="zJF-I0-Qes"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Rfu-Vl-79T" firstAttribute="top" secondItem="eIg-VX-iSL" secondAttribute="top" constant="-9" id="DLn-ed-NHd"/>
+                                    <constraint firstItem="Rfu-Vl-79T" firstAttribute="leading" secondItem="eIg-VX-iSL" secondAttribute="leading" id="ZUn-Xb-CCh"/>
+                                    <constraint firstItem="Rfu-Vl-79T" firstAttribute="height" secondItem="eIg-VX-iSL" secondAttribute="height" priority="250" id="aU4-mf-dfa"/>
+                                    <constraint firstItem="Rfu-Vl-79T" firstAttribute="width" secondItem="eIg-VX-iSL" secondAttribute="width" id="c05-7O-9RJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rfu-Vl-79T" secondAttribute="trailing" id="o3g-zQ-hHJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rfu-Vl-79T" secondAttribute="bottom" id="q2Q-Qv-8mr"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8XF-4b-zGw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Dot-lI-z4d"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zik-mf-HV4" secondAttribute="trailing" id="00U-JC-ZGI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eIg-VX-iSL" secondAttribute="trailing" id="0Px-BI-wel"/>
+                            <constraint firstItem="eIg-VX-iSL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ghj-ZG-tnN"/>
+                            <constraint firstItem="Zik-mf-HV4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MpU-MX-HnS"/>
+                            <constraint firstItem="eIg-VX-iSL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="299" id="OdX-fo-jsF"/>
+                            <constraint firstItem="Zik-mf-HV4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qzl-aO-7IU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eIg-VX-iSL" secondAttribute="bottom" id="gOA-mZ-r1m"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1000"/>
+                    <connections>
+                        <outlet property="descriptionLbl" destination="5hh-Uo-8ws" id="Pt4-tJ-MXN"/>
+                        <outlet property="detailsView" destination="Rfu-Vl-79T" id="CDY-5P-w8T"/>
+                        <outlet property="freebreakfastlbl" destination="ZVn-tF-tAT" id="NZJ-hI-iIm"/>
+                        <outlet property="gymLbl" destination="sxL-cG-3Ys" id="dpv-DA-pyR"/>
+                        <outlet property="hotelImage" destination="Zik-mf-HV4" id="IOv-5j-CZb"/>
+                        <outlet property="hotelName" destination="xMp-yt-qmD" id="h7z-k9-vAR"/>
+                        <outlet property="miniBarlbl" destination="yMF-f6-yXd" id="aex-ZC-6Zy"/>
+                        <outlet property="nonSmokingRoom" destination="fOj-YK-vth" id="lKD-4K-S25"/>
+                        <outlet property="parkinglbl" destination="348-8n-Gmk" id="Dp2-PQ-yRG"/>
+                        <outlet property="privateBalconyLBl" destination="jXq-WV-kBI" id="YLb-9r-zKd"/>
+                        <outlet property="rateLbl" destination="Djr-Em-GA4" id="6PL-SK-su2"/>
+                        <outlet property="refrigeratorLbl" destination="zPn-nq-aBI" id="f5T-PX-DpV"/>
+                        <outlet property="romanticLbl" destination="kno-NB-x3Q" id="Bt1-MU-jfl"/>
+                        <outlet property="roomService" destination="OhN-Np-NYb" id="8l7-YO-hUf"/>
+                        <outlet property="swimmingPool" destination="MXV-wR-pE7" id="G0L-sg-hOv"/>
+                        <outlet property="wifiLbl" destination="i0U-tP-c0r" id="M9F-i9-xNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
