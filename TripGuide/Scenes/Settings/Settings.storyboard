@@ -11,14 +11,36 @@
         <!--Settings View Controller-->
         <scene sceneID="Zl9-3l-daA">
             <objects>
-                <viewController id="Ls4-pl-weZ" customClass="SettingsViewController" customModule="TouristGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ls4-pl-weZ" customClass="SettingsViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HbL-Pp-B5b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dCW-WX-5Fz">
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aKw-Wt-ZsR">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bZh-nL-Khl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dCW-WX-5Fz" firstAttribute="leading" secondItem="bZh-nL-Khl" secondAttribute="leading" id="O1C-qS-sFn"/>
+                            <constraint firstItem="bZh-nL-Khl" firstAttribute="trailing" secondItem="dCW-WX-5Fz" secondAttribute="trailing" id="f3B-SS-390"/>
+                            <constraint firstItem="bZh-nL-Khl" firstAttribute="bottom" secondItem="dCW-WX-5Fz" secondAttribute="bottom" id="gab-o5-WQs"/>
+                            <constraint firstItem="dCW-WX-5Fz" firstAttribute="top" secondItem="bZh-nL-Khl" secondAttribute="top" id="nLn-pB-R9F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pCy-ay-9md"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dCW-WX-5Fz" id="DWl-XV-vuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tu5-6R-VaU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

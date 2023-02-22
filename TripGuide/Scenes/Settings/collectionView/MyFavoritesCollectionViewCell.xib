@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userProfile" id="gTV-IL-0wX" customClass="MyFavoritesCollectionViewCell" customModule="TripGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9a-TK-Gkz">
+                        <rect key="frame" x="2" y="2" width="43" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="QGr-We-bVh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9u-XE-O3R">
+                        <rect key="frame" x="299" y="10" width="15" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Nr9-TE-s7g"/>
+                            <constraint firstAttribute="height" constant="50" id="u3O-aV-cOK"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system">
+                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-q4-HkH">
+                        <rect key="frame" x="284" y="10" width="40" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="g72-Dt-EdJ"/>
+                            <constraint firstAttribute="height" constant="50" id="kdc-AI-E0S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w9u-XE-O3R" secondAttribute="trailing" constant="30" id="5Eg-cd-HxN"/>
+                <constraint firstItem="w9a-TK-Gkz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="5Ir-bU-F4E"/>
+                <constraint firstItem="w9u-XE-O3R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="B6b-Zv-eJm"/>
+                <constraint firstItem="UKX-q4-HkH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Od3-ME-fq9"/>
+                <constraint firstItem="w9a-TK-Gkz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="T9v-JE-om2"/>
+                <constraint firstAttribute="bottom" secondItem="UKX-q4-HkH" secondAttribute="bottom" constant="10" id="XTI-xU-1tX"/>
+                <constraint firstAttribute="bottom" secondItem="w9a-TK-Gkz" secondAttribute="bottom" constant="2" id="hrt-v0-mOj"/>
+                <constraint firstAttribute="trailing" secondItem="UKX-q4-HkH" secondAttribute="trailing" constant="20" id="lMM-UB-VhZ"/>
+                <constraint firstAttribute="bottom" secondItem="w9u-XE-O3R" secondAttribute="bottom" constant="10" id="woI-Rc-6Tf"/>
+            </constraints>
+            <size key="customSize" width="344" height="66"/>
+            <connections>
+                <outlet property="headerlbl" destination="w9a-TK-Gkz" id="sSv-BG-aeh"/>
+            </connections>
+            <point key="canvasLocation" x="164.8854961832061" y="-6.3380281690140849"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
+    </resources>
+</document>

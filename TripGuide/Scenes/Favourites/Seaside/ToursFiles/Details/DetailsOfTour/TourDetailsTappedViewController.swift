@@ -48,7 +48,8 @@ class TourDetailsTappedViewController: UIViewController {
     
     
     private func setUpUI(){
-        tourNameLbl.text = tName
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .white, title: tName ?? "", preferredLargeTitle: true)
+//        tourNameLbl.text = tName
         tourImage.kf.setImage(with: URL(string: tImage ?? ""))
         tourDetails.text = tDetails
         tourImage.layer.cornerRadius = 7

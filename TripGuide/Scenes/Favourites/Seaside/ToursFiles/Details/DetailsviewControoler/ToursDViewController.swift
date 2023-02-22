@@ -29,6 +29,7 @@ class ToursDViewController: UIViewController {
         toursDetailsManager.fetchingTours { [weak self] tour in
             self?.fetchedTours = tour.tours
         }
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .white, title: "Suggested Tours", preferredLargeTitle: true)
         navigationItem.backButtonTitle = ""
     }
     
