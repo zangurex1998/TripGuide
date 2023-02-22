@@ -168,8 +168,6 @@ extension DetailsViewController: UICollectionViewDelegate{
             secondVC.parkingString = hotel[indexPath.row].freeParking
             secondVC.poolString = hotel[indexPath.row].swimmingPool
             secondVC.gymString = hotel[indexPath.row].gym
-            
-            secondVC.hotelDescription = hotel[indexPath.row].description
             secondVC.roomSrvc = hotel[indexPath.row].roomService
             secondVC.balcony = hotel[indexPath.row].privateBalcony
             secondVC.noSmoke = hotel[indexPath.row].nonSmokingRoom

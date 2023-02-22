@@ -29,7 +29,7 @@ class FavoriteViewController: UIViewController {
     
     var seasideManager: SeasideApiManagerProtocol = SeasideApiManager()
     var winterManager: WinterApiManagerProtocol = WinterApiManager()
-    
+    var toursFetched: TourAPiManagerProtocol = TourApiManager()
     
     var winterFetched: [Winter] = [] {
         didSet{
@@ -44,15 +44,20 @@ class FavoriteViewController: UIViewController {
        
     }
     
+    lazy var tours: [Tour] = [] {
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
-        setUpSegmentedControll()
        
-        navigationController?.tabBarItem.title = "Recomended"
+        navigationItem.backButtonTitle = "" 
         navigationController?.tabBarItem.image = UIImage(systemName: "heart.fill")
         configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Suggestions", preferredLargeTitle: true)
         seasideManager.fetchingSeasides {[weak self] sea in
@@ -60,9 +65,12 @@ class FavoriteViewController: UIViewController {
         }
         winterManager.fetchingHotels {[weak self] winterCome in
             self?.winterFetched = winterCome.winter
-            print(winterCome.winter)
+            
         }
-        navigationItem.backButtonTitle = ""
+       
+        toursFetched.fetchingTours {[weak self] tour in
+            self?.tours = tour.tours
+        }
       
     }
   
@@ -75,16 +83,13 @@ class FavoriteViewController: UIViewController {
     
     //MARK: - Methods
     
-    private func setUpSegmentedControll(){
-//        segmentControl.tintColor = .red
-//        segmentControl.backgroundColor = .blue
-        
-    }
+ 
     
     private func setUpTableView(){
         tableView.dataSource = self
         tableView.register(UINib(nibName: "SeasideTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasideTableViewCell")
         tableView.register(UINib(nibName: "WinterTableViewCell", bundle: nil), forCellReuseIdentifier: "WinterTableViewCell")
+        tableView.register(UINib(nibName: "ToursTableViewCell", bundle: nil), forCellReuseIdentifier: "ToursTableViewCell")
         tableView.backgroundColor = .black
         tableView.delegate = self
         
@@ -96,7 +101,7 @@ class FavoriteViewController: UIViewController {
 
 extension FavoriteViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,15 +109,20 @@ extension FavoriteViewController: UITableViewDataSource{
             let secondCell = tableView.dequeueReusableCell(withIdentifier: "SeasideTableViewCell", for: indexPath) as! SeasideTableViewCell
             secondCell.seaside = seaFetched
             return secondCell
-        }else{
+        } else if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "WinterTableViewCell", for: indexPath) as! WinterTableViewCell
             cell.winter = winterFetched
             return cell
+        }else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ToursTableViewCell", for: indexPath) as!ToursTableViewCell
+            cell.tours = tours
+            return cell
         }
     }
-    
-    
 }
+
+    
+
 extension FavoriteViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 1{
