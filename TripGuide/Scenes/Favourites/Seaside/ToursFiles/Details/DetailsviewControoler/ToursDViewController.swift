@@ -29,6 +29,7 @@ class ToursDViewController: UIViewController {
         toursDetailsManager.fetchingTours { [weak self] tour in
             self?.fetchedTours = tour.tours
         }
+        navigationItem.backButtonTitle = ""
     }
     
     private func setUpTableView(){
@@ -54,6 +55,22 @@ extension ToursDViewController: UITableViewDelegate, UITableViewDataSource{
         cell.configure(with: fetchedTours[indexPath.row])
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "TourDetailsTapped", bundle: nil).instantiateViewController(withIdentifier: "TourDetailsTapped") as! TourDetailsTappedViewController
+        vc.tImage = fetchedTours[indexPath.row].image
+        vc.tName = fetchedTours[indexPath.row].name
+        vc.tDetails = fetchedTours[indexPath.row].about
+        vc.coffe = fetchedTours[indexPath.row].coffeeOrTea
+        vc.breakfast = fetchedTours[indexPath.row].breakfast
+        vc.airConditioner = fetchedTours[indexPath.row].AirConditionerVehicle
+        vc.wine = fetchedTours[indexPath.row].wineDegustation
+        vc.beverage = fetchedTours[indexPath.row].beveragesIncluded
+        vc.price = fetchedTours[indexPath.row].price
+        vc.rate = fetchedTours[indexPath.row].rate
+        vc.phoneNum = fetchedTours[indexPath.row].phoneNumber
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
