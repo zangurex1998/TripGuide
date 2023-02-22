@@ -14,6 +14,8 @@
 		802A1DBB29A4D75600F5FB5B /* SummerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A1DB929A4D75600F5FB5B /* SummerTableViewCell.swift */; };
 		802A1DBC29A4D75600F5FB5B /* SummerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A1DBA29A4D75600F5FB5B /* SummerTableViewCell.xib */; };
 		802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802C6E2D299FD28500741CA8 /* Favorites.storyboard */; };
+		802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802E425929A6272B00F6A245 /* TourDetailsTapped.storyboard */; };
+		802E425C29A6273A00F6A245 /* TourDetailsTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E425B29A6273A00F6A245 /* TourDetailsTappedViewController.swift */; };
 		80348E2A29A5EA2600D192B3 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2929A5EA2600D192B3 /* Tour.swift */; };
 		80348E2C29A5EAC600D192B3 /* TourApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2B29A5EAC600D192B3 /* TourApiManager.swift */; };
 		80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */; };
@@ -86,6 +88,8 @@
 		802A1DB929A4D75600F5FB5B /* SummerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerTableViewCell.swift; sourceTree = "<group>"; };
 		802A1DBA29A4D75600F5FB5B /* SummerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummerTableViewCell.xib; sourceTree = "<group>"; };
 		802C6E2D299FD28500741CA8 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		802E425929A6272B00F6A245 /* TourDetailsTapped.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourDetailsTapped.storyboard; sourceTree = "<group>"; };
+		802E425B29A6273A00F6A245 /* TourDetailsTappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailsTappedViewController.swift; sourceTree = "<group>"; };
 		80348E2929A5EA2600D192B3 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		80348E2B29A5EAC600D192B3 /* TourApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourApiManager.swift; sourceTree = "<group>"; };
 		80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,6 +210,15 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		802E425429A6256C00F6A245 /* DetailsOfTour */ = {
+			isa = PBXGroup;
+			children = (
+				802E425929A6272B00F6A245 /* TourDetailsTapped.storyboard */,
+				802E425B29A6273A00F6A245 /* TourDetailsTappedViewController.swift */,
+			);
+			path = DetailsOfTour;
+			sourceTree = "<group>";
+		};
 		80348E2D29A5ED1200D192B3 /* ToursFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +250,7 @@
 		804E6D6C29A5FE1F00A3014A /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				802E425429A6256C00F6A245 /* DetailsOfTour */,
 				804E6D7229A5FECC00A3014A /* ToursTableView */,
 				804E6D7129A5FEBB00A3014A /* DetailsviewControoler */,
 			);
@@ -634,6 +648,7 @@
 				804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
+				802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */,
 				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
 				802A1DAE29A4D0C000F5FB5B /* WinterTableViewCell.xib in Resources */,
@@ -678,6 +693,7 @@
 				80919180299FCA4900850F46 /* CityDetailsViewController.swift in Sources */,
 				80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */,
 				80919186299FCA7900850F46 /* hotelsAPIManager.swift in Sources */,
+				802E425C29A6273A00F6A245 /* TourDetailsTappedViewController.swift in Sources */,
 				809D608A29A38EAC00E9EBBA /* ResortsViewController.swift in Sources */,
 				80348E2C29A5EAC600D192B3 /* TourApiManager.swift in Sources */,
 				8091917C299FCA3200850F46 /* ExploreViewController.swift in Sources */,

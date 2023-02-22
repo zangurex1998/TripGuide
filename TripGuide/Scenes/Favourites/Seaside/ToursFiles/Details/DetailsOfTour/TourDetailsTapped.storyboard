@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tour Details Tapped View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TourDetailsTapped" id="Y6W-OH-hqX" customClass="TourDetailsTappedViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upx-hQ-1ts">
+                                <rect key="frame" x="0.0" y="59" width="393" height="807"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-bL-73C">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="799"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwZ-58-Jx5">
+                                                <rect key="frame" x="10" y="20" width="363" height="25.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sEH-VR-YD1">
+                                                <rect key="frame" x="61" y="65.333333333333314" width="270" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="W2D-aO-elr"/>
+                                                    <constraint firstAttribute="width" constant="270" id="yTG-YZ-MrR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c68-Ek-l5p">
+                                                <rect key="frame" x="16" y="320.66666666666669" width="367" height="21.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-up-ekN">
+                                                <rect key="frame" x="10" y="285.33333333333331" width="373" height="25.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to expect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCg-fC-IDz">
+                                                <rect key="frame" x="10" y="362" width="373" height="25.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                <color key="textColor" systemColor="systemMintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p3s-cm-4LN">
+                                                <rect key="frame" x="16" y="397.33333333333331" width="367" height="179.99999999999994"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CofeeOrTea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9u-t7-TSl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beverages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IU-WZ-MFT">
+                                                        <rect key="frame" x="0.0" y="40" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T4-KC-6XB">
+                                                        <rect key="frame" x="0.0" y="80.000000000000057" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wineDegustation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmn-V8-ya1">
+                                                        <rect key="frame" x="0.0" y="120.00000000000006" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AirConditionerVehicle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkj-ah-TTU">
+                                                        <rect key="frame" x="0.0" y="160.00000000000006" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-eT-d9U">
+                                                <rect key="frame" x="10" y="615" width="373" height="25.333333333333371"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                <color key="textColor" systemColor="systemMintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-Ax-FDa">
+                                                <rect key="frame" x="16" y="650.33333333333337" width="367" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-gp-dO7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cik-Cm-KlT">
+                                                        <rect key="frame" x="0.0" y="40" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUm-Er-7p2">
+                                                        <rect key="frame" x="0.0" y="80" width="367" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemMintColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pPd-eT-d9U" firstAttribute="trailing" secondItem="oe3-up-ekN" secondAttribute="trailing" id="2TZ-tl-Q5X"/>
+                                            <constraint firstItem="pPd-eT-d9U" firstAttribute="top" secondItem="p3s-cm-4LN" secondAttribute="bottom" constant="37.666666666666742" id="4Mh-QH-PpO"/>
+                                            <constraint firstAttribute="bottom" secondItem="uTM-Ax-FDa" secondAttribute="bottom" constant="48.670000000000002" id="6AH-lb-EjF"/>
+                                            <constraint firstItem="tCg-fC-IDz" firstAttribute="trailing" secondItem="oe3-up-ekN" secondAttribute="trailing" id="7M0-Fx-Zm6"/>
+                                            <constraint firstItem="p3s-cm-4LN" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="16" id="8p4-Dv-8Gy"/>
+                                            <constraint firstItem="tCg-fC-IDz" firstAttribute="leading" secondItem="oe3-up-ekN" secondAttribute="leading" id="CMs-oR-iVl"/>
+                                            <constraint firstItem="p3s-cm-4LN" firstAttribute="top" secondItem="tCg-fC-IDz" secondAttribute="bottom" constant="10" id="EV9-Fi-iK7"/>
+                                            <constraint firstAttribute="trailing" secondItem="sEH-VR-YD1" secondAttribute="trailing" constant="62" id="F1O-j5-EFc"/>
+                                            <constraint firstAttribute="trailing" secondItem="c68-Ek-l5p" secondAttribute="trailing" constant="10" id="Fx4-K4-UC7"/>
+                                            <constraint firstAttribute="trailing" secondItem="p3s-cm-4LN" secondAttribute="trailing" constant="10" id="HXj-66-pk6"/>
+                                            <constraint firstItem="oe3-up-ekN" firstAttribute="top" secondItem="sEH-VR-YD1" secondAttribute="bottom" constant="20" id="KL9-8p-IvW"/>
+                                            <constraint firstItem="tCg-fC-IDz" firstAttribute="top" secondItem="c68-Ek-l5p" secondAttribute="bottom" constant="20.000000000000057" id="KZx-bj-3Ee"/>
+                                            <constraint firstItem="iwZ-58-Jx5" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="10" id="Kn3-xk-utI"/>
+                                            <constraint firstItem="c68-Ek-l5p" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="16" id="Ndl-pn-3p2"/>
+                                            <constraint firstItem="uTM-Ax-FDa" firstAttribute="leading" secondItem="p3s-cm-4LN" secondAttribute="leading" id="NtJ-Rw-LjF"/>
+                                            <constraint firstItem="iwZ-58-Jx5" firstAttribute="top" secondItem="zRE-bL-73C" secondAttribute="top" constant="20" id="QhI-PX-IUo"/>
+                                            <constraint firstItem="uTM-Ax-FDa" firstAttribute="trailing" secondItem="p3s-cm-4LN" secondAttribute="trailing" id="Rhb-9Y-w4b"/>
+                                            <constraint firstItem="pPd-eT-d9U" firstAttribute="leading" secondItem="oe3-up-ekN" secondAttribute="leading" id="TJi-of-rag"/>
+                                            <constraint firstAttribute="trailing" secondItem="iwZ-58-Jx5" secondAttribute="trailing" constant="20" id="WEj-d3-Av0"/>
+                                            <constraint firstItem="uTM-Ax-FDa" firstAttribute="top" secondItem="pPd-eT-d9U" secondAttribute="bottom" constant="10" id="an0-aI-xqO"/>
+                                            <constraint firstItem="sEH-VR-YD1" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="61" id="cMu-WE-rvJ"/>
+                                            <constraint firstItem="c68-Ek-l5p" firstAttribute="top" secondItem="oe3-up-ekN" secondAttribute="bottom" constant="10" id="eyg-Vn-yJ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="oe3-up-ekN" secondAttribute="trailing" constant="10" id="hGv-NT-bie"/>
+                                            <constraint firstItem="sEH-VR-YD1" firstAttribute="top" secondItem="iwZ-58-Jx5" secondAttribute="bottom" constant="20" id="psa-hz-dTS"/>
+                                            <constraint firstItem="oe3-up-ekN" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="10" id="t8F-Le-5Xj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zRE-bL-73C" firstAttribute="height" secondItem="Upx-hQ-1ts" secondAttribute="height" priority="250" id="B6H-4U-bTT"/>
+                                    <constraint firstAttribute="bottom" secondItem="zRE-bL-73C" secondAttribute="bottom" id="WzB-qZ-HPK"/>
+                                    <constraint firstItem="zRE-bL-73C" firstAttribute="width" secondItem="Upx-hQ-1ts" secondAttribute="width" id="dPb-40-ffA"/>
+                                    <constraint firstItem="zRE-bL-73C" firstAttribute="top" secondItem="Upx-hQ-1ts" secondAttribute="top" id="dS9-Zk-lxY"/>
+                                    <constraint firstItem="zRE-bL-73C" firstAttribute="leading" secondItem="Upx-hQ-1ts" secondAttribute="leading" id="oL8-NI-EBF"/>
+                                    <constraint firstAttribute="trailing" secondItem="zRE-bL-73C" secondAttribute="trailing" id="oni-6g-XMT"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="AsR-So-7LU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ad5-zm-aaK"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Upx-hQ-1ts" secondAttribute="bottom" id="4zF-Fy-34g"/>
+                            <constraint firstItem="Upx-hQ-1ts" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7DT-44-AMF"/>
+                            <constraint firstItem="Upx-hQ-1ts" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Afb-fW-AT0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Upx-hQ-1ts" secondAttribute="trailing" id="PEe-h6-WxX"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="900"/>
+                    <connections>
+                        <outlet property="airConditionerlbl" destination="wkj-ah-TTU" id="SYI-0k-rDe"/>
+                        <outlet property="beveragesLbl" destination="7IU-WZ-MFT" id="V2c-g0-eTS"/>
+                        <outlet property="breakfastlbl" destination="9T4-KC-6XB" id="0z0-m8-izy"/>
+                        <outlet property="coffeLbl" destination="F9u-t7-TSl" id="hsG-9D-KZY"/>
+                        <outlet property="phNumber" destination="fUm-Er-7p2" id="426-Uv-HvT"/>
+                        <outlet property="priceLbl" destination="Cdy-gp-dO7" id="YT9-fU-9yQ"/>
+                        <outlet property="rateLbl" destination="Cik-Cm-KlT" id="OIP-SX-TLk"/>
+                        <outlet property="tourDetails" destination="c68-Ek-l5p" id="ye2-ah-PTv"/>
+                        <outlet property="tourImage" destination="sEH-VR-YD1" id="7Ha-Gh-AhH"/>
+                        <outlet property="tourNameLbl" destination="iwZ-58-Jx5" id="Tg6-H9-049"/>
+                        <outlet property="wineLbl" destination="hmn-V8-ya1" id="Ufg-lo-4gX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
