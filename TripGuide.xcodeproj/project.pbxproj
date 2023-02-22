@@ -14,6 +14,12 @@
 		802A1DBB29A4D75600F5FB5B /* SummerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A1DB929A4D75600F5FB5B /* SummerTableViewCell.swift */; };
 		802A1DBC29A4D75600F5FB5B /* SummerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802A1DBA29A4D75600F5FB5B /* SummerTableViewCell.xib */; };
 		802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802C6E2D299FD28500741CA8 /* Favorites.storyboard */; };
+		80348E2A29A5EA2600D192B3 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2929A5EA2600D192B3 /* Tour.swift */; };
+		80348E2C29A5EAC600D192B3 /* TourApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2B29A5EAC600D192B3 /* TourApiManager.swift */; };
+		80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */; };
+		80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */; };
+		80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */; };
+		80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */; };
 		808120FF29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */; };
 		8081210029A4CA1900A3DDBD /* WinteerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */; };
 		80919121299FC74A00850F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919120299FC74A00850F46 /* AppDelegate.swift */; };
@@ -76,6 +82,12 @@
 		802A1DB929A4D75600F5FB5B /* SummerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerTableViewCell.swift; sourceTree = "<group>"; };
 		802A1DBA29A4D75600F5FB5B /* SummerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummerTableViewCell.xib; sourceTree = "<group>"; };
 		802C6E2D299FD28500741CA8 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		80348E2929A5EA2600D192B3 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		80348E2B29A5EAC600D192B3 /* TourApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourApiManager.swift; sourceTree = "<group>"; };
+		80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursTableViewCell.swift; sourceTree = "<group>"; };
+		80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursTableViewCell.xib; sourceTree = "<group>"; };
+		80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursCollectionViewCell.swift; sourceTree = "<group>"; };
+		80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursCollectionViewCell.xib; sourceTree = "<group>"; };
 		808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinteerCollectionViewCell.swift; sourceTree = "<group>"; };
 		808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinteerCollectionViewCell.xib; sourceTree = "<group>"; };
 		8091911D299FC74A00850F46 /* TripGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +196,17 @@
 				802C6E2D299FD28500741CA8 /* Favorites.storyboard */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		80348E2D29A5ED1200D192B3 /* ToursFiles */ = {
+			isa = PBXGroup;
+			children = (
+				80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */,
+				80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */,
+				80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */,
+				80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */,
+			);
+			path = ToursFiles;
 			sourceTree = "<group>";
 		};
 		808120FC29A4C9FB00A3DDBD /* Winter */ = {
@@ -414,6 +437,7 @@
 				80919185299FCA7900850F46 /* RestaurantApiManager.swift */,
 				80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */,
 				80C83B2F29A37A3100797B8A /* WinterAPIManager.swift */,
+				80348E2B29A5EAC600D192B3 /* TourApiManager.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -426,6 +450,7 @@
 				8091918B299FCA8800850F46 /* Restaurant.swift */,
 				80BCE77829A12476001E0E5D /* seaside.swift */,
 				80C83B2D29A37A2300797B8A /* Winter.swift */,
+				80348E2929A5EA2600D192B3 /* Tour.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +506,7 @@
 		80FCEDB129A13E490032BB39 /* Seaside */ = {
 			isa = PBXGroup;
 			children = (
+				80348E2D29A5ED1200D192B3 /* ToursFiles */,
 				802A1DAF29A4D65C00F5FB5B /* SeeAllFiles */,
 				80266C1329A2054300CF2551 /* TableView */,
 				80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */,
@@ -553,7 +579,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
+				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
 				802A1DAE29A4D0C000F5FB5B /* WinterTableViewCell.xib in Resources */,
 				80919140299FC85B00850F46 /* Main.storyboard in Resources */,
@@ -597,6 +625,7 @@
 				80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */,
 				80919186299FCA7900850F46 /* hotelsAPIManager.swift in Sources */,
 				809D608A29A38EAC00E9EBBA /* ResortsViewController.swift in Sources */,
+				80348E2C29A5EAC600D192B3 /* TourApiManager.swift in Sources */,
 				8091917C299FCA3200850F46 /* ExploreViewController.swift in Sources */,
 				80CE7AFF29A3C41400874F63 /* WHotelsDetailsViewController.swift in Sources */,
 				809D608E29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift in Sources */,
@@ -605,6 +634,7 @@
 				80919188299FCA7900850F46 /* RestaurantApiManager.swift in Sources */,
 				802A1DB429A4D6AD00F5FB5B /* Summer.swift in Sources */,
 				80919146299FC8C700850F46 /* Extension+UIColor.swift in Sources */,
+				80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */,
 				802A1DAD29A4D0C000F5FB5B /* WinterTableViewCell.swift in Sources */,
 				80919176299FCA1800850F46 /* ExploreTableViewCell.swift in Sources */,
 				8091914C299FC8E500850F46 /* SettingsViewController.swift in Sources */,
@@ -615,7 +645,9 @@
 				80919147299FC8C700850F46 /* Extension+TabBarExtension.swift in Sources */,
 				80C83B2E29A37A2300797B8A /* Winter.swift in Sources */,
 				80919168299FC9BC00850F46 /* RestaurantCollectionViewCell.swift in Sources */,
+				80348E2A29A5EA2600D192B3 /* Tour.swift in Sources */,
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
+				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,

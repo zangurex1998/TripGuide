@@ -79,6 +79,7 @@ extension ResortsViewController: UITableViewDelegate{
         vc.refrig = Winterhotels[indexPath.row].refrigerator
         vc.romantic = Winterhotels[indexPath.row].romantic
         
+        
         /*
          roomService.text = roomSrvc == true ? "room service ✅" : ""
          privateBalconyLBl.text = balcony == true ? "private Balcony ✅" : ""
