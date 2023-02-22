@@ -20,6 +20,10 @@
 		80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */; };
 		80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */; };
 		80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */; };
+		804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804E6D7729A6010700A3014A /* ToursDetails.storyboard */; };
+		804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7929A6011400A3014A /* ToursDViewController.swift */; };
+		804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */; };
+		804E6D7E29A6013F00A3014A /* ToursDetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */; };
 		808120FF29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */; };
 		8081210029A4CA1900A3DDBD /* WinteerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */; };
 		80919121299FC74A00850F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919120299FC74A00850F46 /* AppDelegate.swift */; };
@@ -88,6 +92,10 @@
 		80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursTableViewCell.xib; sourceTree = "<group>"; };
 		80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursCollectionViewCell.swift; sourceTree = "<group>"; };
 		80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursCollectionViewCell.xib; sourceTree = "<group>"; };
+		804E6D7729A6010700A3014A /* ToursDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToursDetails.storyboard; sourceTree = "<group>"; };
+		804E6D7929A6011400A3014A /* ToursDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDViewController.swift; sourceTree = "<group>"; };
+		804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDetTableViewCell.swift; sourceTree = "<group>"; };
+		804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursDetTableViewCell.xib; sourceTree = "<group>"; };
 		808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinteerCollectionViewCell.swift; sourceTree = "<group>"; };
 		808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinteerCollectionViewCell.xib; sourceTree = "<group>"; };
 		8091911D299FC74A00850F46 /* TripGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,12 +209,56 @@
 		80348E2D29A5ED1200D192B3 /* ToursFiles */ = {
 			isa = PBXGroup;
 			children = (
+				804E6D6C29A5FE1F00A3014A /* Details */,
+				804E6D6A29A5FE0C00A3014A /* TableView */,
+				804E6D6B29A5FE1800A3014A /* CollectionView */,
+			);
+			path = ToursFiles;
+			sourceTree = "<group>";
+		};
+		804E6D6A29A5FE0C00A3014A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
 				80348E2E29A5ED3700D192B3 /* ToursTableViewCell.swift */,
 				80348E2F29A5ED3700D192B3 /* ToursTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		804E6D6B29A5FE1800A3014A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
 				80348E3229A5EF5100D192B3 /* ToursCollectionViewCell.swift */,
 				80348E3329A5EF5100D192B3 /* ToursCollectionViewCell.xib */,
 			);
-			path = ToursFiles;
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		804E6D6C29A5FE1F00A3014A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				804E6D7229A5FECC00A3014A /* ToursTableView */,
+				804E6D7129A5FEBB00A3014A /* DetailsviewControoler */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		804E6D7129A5FEBB00A3014A /* DetailsviewControoler */ = {
+			isa = PBXGroup;
+			children = (
+				804E6D7729A6010700A3014A /* ToursDetails.storyboard */,
+				804E6D7929A6011400A3014A /* ToursDViewController.swift */,
+			);
+			path = DetailsviewControoler;
+			sourceTree = "<group>";
+		};
+		804E6D7229A5FECC00A3014A /* ToursTableView */ = {
+			isa = PBXGroup;
+			children = (
+				804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */,
+				804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */,
+			);
+			path = ToursTableView;
 			sourceTree = "<group>";
 		};
 		808120FC29A4C9FB00A3DDBD /* Winter */ = {
@@ -579,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
 				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
@@ -589,6 +642,7 @@
 				80CE7B0129A3C42400874F63 /* WinterHDetails.storyboard in Resources */,
 				80B2639729A1509300A0F3EF /* Gilroy-Bold.ttf in Resources */,
 				8091917B299FCA3200850F46 /* Explore.storyboard in Resources */,
+				804E6D7E29A6013F00A3014A /* ToursDetTableViewCell.xib in Resources */,
 				80919177299FCA1800850F46 /* ExploreTableViewCell.xib in Resources */,
 				8081210029A4CA1900A3DDBD /* WinteerCollectionViewCell.xib in Resources */,
 				80B2639829A1509500A0F3EF /* Gilroy-Regular.ttf in Resources */,
@@ -636,6 +690,7 @@
 				80919146299FC8C700850F46 /* Extension+UIColor.swift in Sources */,
 				80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */,
 				802A1DAD29A4D0C000F5FB5B /* WinterTableViewCell.swift in Sources */,
+				804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */,
 				80919176299FCA1800850F46 /* ExploreTableViewCell.swift in Sources */,
 				8091914C299FC8E500850F46 /* SettingsViewController.swift in Sources */,
 				8091916C299FC9D200850F46 /* HotelCollectionViewCell.swift in Sources */,
@@ -649,6 +704,7 @@
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
 				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
+				804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,
 				80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */,
