@@ -8,13 +8,71 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+//MARK: - Outlets
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var shared = CollectionDataSource.shared.pageHeader
+   // var myFavorites: [LastPage] = []
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        navigationController?.tabBarItem.image = UIImage(systemName: "person.fill")
+        navigationController?.tabBarItem.title = "Profile"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Settings", preferredLargeTitle: true)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .black, title: "Profile", preferredLargeTitle: false
+        )
+        setUpCollectionView()
+    }
+    
+    private func setUpCollectionView(){
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "MyFavoritesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "userProfile")
+        collectionView.delegate = self
+        collectionView.backgroundColor = .black
     }
     
 
 
+}
+
+extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        shared.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userProfile", for: indexPath) as! MyFavoritesCollectionViewCell
+        cell.configure(with: shared[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width   , height: 70)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: 10, left: 5, bottom: 0, right: 0)
+    }
+    
+    /// Needs to Be configured
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0 :
+            let vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewController(withIdentifier: "summer")
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
+    }
+    
+    
 }
