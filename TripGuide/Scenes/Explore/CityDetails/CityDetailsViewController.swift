@@ -28,7 +28,9 @@ class CityDetailsViewController: UIViewController {
  
     
     
-    
+    deinit {
+        print("this page was deinited")
+    }
   
     
     private func setUpView(){
