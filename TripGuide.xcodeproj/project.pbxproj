@@ -27,6 +27,10 @@
 		804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */; };
 		804E6D7E29A6013F00A3014A /* ToursDetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */; };
 		805AFE4529A79F2000F10D98 /* DataShouldBeFetched.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805AFE4329A79F2000F10D98 /* DataShouldBeFetched.xcdatamodeld */; };
+		805AFE4829A7D26200F10D98 /* PlannedTour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805AFE4729A7D26100F10D98 /* PlannedTour.storyboard */; };
+		805AFE4A29A7D26F00F10D98 /* PlannedTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AFE4929A7D26F00F10D98 /* PlannedTourViewController.swift */; };
+		805AFE4E29A7D38E00F10D98 /* PlannedTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AFE4C29A7D38E00F10D98 /* PlannedTourTableViewCell.swift */; };
+		805AFE4F29A7D38E00F10D98 /* PlannedTourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805AFE4D29A7D38E00F10D98 /* PlannedTourTableViewCell.xib */; };
 		807712E329A76B7D00124195 /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807712E129A76B7D00124195 /* BlogCollectionViewCell.swift */; };
 		807712E429A76B7D00124195 /* BlogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807712E229A76B7D00124195 /* BlogCollectionViewCell.xib */; };
 		807712E729A7759300124195 /* WritingBlog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807712E629A7759300124195 /* WritingBlog.storyboard */; };
@@ -112,6 +116,10 @@
 		804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDetTableViewCell.swift; sourceTree = "<group>"; };
 		804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursDetTableViewCell.xib; sourceTree = "<group>"; };
 		805AFE4429A79F2000F10D98 /* DataShouldBeFetched.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataShouldBeFetched.xcdatamodel; sourceTree = "<group>"; };
+		805AFE4729A7D26100F10D98 /* PlannedTour.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlannedTour.storyboard; sourceTree = "<group>"; };
+		805AFE4929A7D26F00F10D98 /* PlannedTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTourViewController.swift; sourceTree = "<group>"; };
+		805AFE4C29A7D38E00F10D98 /* PlannedTourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTourTableViewCell.swift; sourceTree = "<group>"; };
+		805AFE4D29A7D38E00F10D98 /* PlannedTourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlannedTourTableViewCell.xib; sourceTree = "<group>"; };
 		807712E129A76B7D00124195 /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
 		807712E229A76B7D00124195 /* BlogCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogCollectionViewCell.xib; sourceTree = "<group>"; };
 		807712E629A7759300124195 /* WritingBlog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WritingBlog.storyboard; sourceTree = "<group>"; };
@@ -297,6 +305,24 @@
 			path = ToursTableView;
 			sourceTree = "<group>";
 		};
+		805AFE4629A7D25300F10D98 /* PlannedTours */ = {
+			isa = PBXGroup;
+			children = (
+				805AFE4729A7D26100F10D98 /* PlannedTour.storyboard */,
+				805AFE4929A7D26F00F10D98 /* PlannedTourViewController.swift */,
+			);
+			path = PlannedTours;
+			sourceTree = "<group>";
+		};
+		805AFE4B29A7D37800F10D98 /* PlannedToursTableView */ = {
+			isa = PBXGroup;
+			children = (
+				805AFE4C29A7D38E00F10D98 /* PlannedTourTableViewCell.swift */,
+				805AFE4D29A7D38E00F10D98 /* PlannedTourTableViewCell.xib */,
+			);
+			path = PlannedToursTableView;
+			sourceTree = "<group>";
+		};
 		807712E029A76B6900124195 /* BlogCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +469,8 @@
 		80919148299FC8D900850F46 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				805AFE4B29A7D37800F10D98 /* PlannedToursTableView */,
+				805AFE4629A7D25300F10D98 /* PlannedTours */,
 				80B7022E29A7631A00B952FE /* MyBlog */,
 				80D429ED29A6752800BF26E8 /* collectionView */,
 				80919149299FC8E500850F46 /* Settings.storyboard */,
@@ -726,7 +754,9 @@
 				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
 				802A1DAE29A4D0C000F5FB5B /* WinterTableViewCell.xib in Resources */,
+				805AFE4F29A7D38E00F10D98 /* PlannedTourTableViewCell.xib in Resources */,
 				80919140299FC85B00850F46 /* Main.storyboard in Resources */,
+				805AFE4829A7D26200F10D98 /* PlannedTour.storyboard in Resources */,
 				802A1DBC29A4D75600F5FB5B /* SummerTableViewCell.xib in Resources */,
 				80CE7B0129A3C42400874F63 /* WinterHDetails.storyboard in Resources */,
 				80D429F129A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib in Resources */,
@@ -803,11 +833,13 @@
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
 				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
+				805AFE4E29A7D38E00F10D98 /* PlannedTourTableViewCell.swift in Sources */,
 				804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
 				80B7023329A7634A00B952FE /* BlogViewController.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,
 				80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */,
+				805AFE4A29A7D26F00F10D98 /* PlannedTourViewController.swift in Sources */,
 				8091918D299FCA8800850F46 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

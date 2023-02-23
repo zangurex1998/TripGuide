@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import CoreData
 class TourDetailsTappedViewController: UIViewController {
     //MARK: - Outlets
         
@@ -22,6 +23,10 @@ class TourDetailsTappedViewController: UIViewController {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var rateLbl: UILabel!
     @IBOutlet weak var phNumber: UILabel!
+    
+    @IBOutlet weak var addToPlans: UIButton!
+    
+    @IBOutlet weak var addToPlanslbl: UILabel!
     
     //MARK: - Properties
     
@@ -39,15 +44,29 @@ class TourDetailsTappedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
-       
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!
+        print(paths)
     }
     
     deinit{
         print("TourDetails Deinited")
     }
     
+    //MARK: - Actions
     
+    @IBAction func didTapAddToPlans(_ sender: Any) {
+            print("Tapped add To Plans")
+            save()
+    }
+    
+    
+    //MARK: - Methods
     private func setUpUI(){
+        addToPlans.layer.cornerRadius = 10
+        addToPlanslbl.layer.masksToBounds = true
+        addToPlanslbl.layer.cornerRadius = 10
+        addToPlans.backgroundColor = .systemGray
+        
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .white, title: tName ?? "", preferredLargeTitle: true)
 //        tourNameLbl.text = tName
         tourImage.kf.setImage(with: URL(string: tImage ?? ""))
@@ -65,8 +84,30 @@ class TourDetailsTappedViewController: UIViewController {
         guard let price = price else {return}
         priceLbl.text = "Price: \(price) "
     }
-   
     
+    //MARK: - ToCoreData
+   
+    func save(){
+        guard let appDelegate = (UIApplication.shared.delegate as? AppDelegate) else {return}
+        let container = appDelegate.persistentContainer
+        let context = container.viewContext
+        guard let entity = NSEntityDescription.entity(forEntityName: "TourPlans", in: context) else {return}
+        let plans = NSManagedObject(entity: entity, insertInto: context)
+        
+        guard let tourImage = tImage else {return}
+        guard let tourName = tName else {return}
+        
+        plans.setValue(tourImage, forKey: "image")
+        plans.setValue(tourName, forKey: "name")
+        
+        do{
+            try context.save()
+        }
+        catch{
+            print(error)
+        }
+        
+    }
     
     
 
