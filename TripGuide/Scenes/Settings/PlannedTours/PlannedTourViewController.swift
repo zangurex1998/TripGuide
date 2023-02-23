@@ -27,6 +27,8 @@ class PlannedTourViewController: UIViewController {
         super.viewWillAppear(animated)
         fetchingFromCore()
         self.tableView.reloadData()
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Planned Trips", preferredLargeTitle: false)
+        view.backgroundColor = .black
     }
     
     
@@ -43,7 +45,7 @@ class PlannedTourViewController: UIViewController {
         guard let appDelegate = (UIApplication.shared.delegate as? AppDelegate) else {return}
         let container = appDelegate.persistentContainer
         let context = container.viewContext
-       // let entity = NSEntityDescription.entity(forEntityName: "TourPlans", in: context)
+    
         
         let request = NSFetchRequest<TourPlans>(entityName: "TourPlans")
         
@@ -75,7 +77,8 @@ extension PlannedTourViewController: UITableViewDataSource{
         
         cell.tourName.text = result.name
         cell.tourImage.kf.setImage(with: URL(string: result.image ?? ""))
-        
+        cell.priceLbl.text = result.tourPrice
+        cell.PhoneNumberlbl.text = "Contact 📞 \(result.phoneNumb ?? "")"
         return cell
     }
     
