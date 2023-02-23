@@ -96,9 +96,12 @@ class TourDetailsTappedViewController: UIViewController {
         
         guard let tourImage = tImage else {return}
         guard let tourName = tName else {return}
-        
+        guard let phone = phoneNum else {return}
+        guard let money = price else {return}
         plans.setValue(tourImage, forKey: "image")
         plans.setValue(tourName, forKey: "name")
+        plans.setValue(phone, forKey: "phoneNumb")
+        plans.setValue(money, forKey: "tourPrice")
         
         do{
             try context.save()

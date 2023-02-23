@@ -7,5 +7,7 @@
     <entity name="TourPlans" representedClassName="TourPlans" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumb" optional="YES" attributeType="String"/>
+        <attribute name="tourPrice" optional="YES" attributeType="String"/>
     </entity>
 </model>
