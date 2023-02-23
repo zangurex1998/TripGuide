@@ -4,66 +4,59 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Gilroy-Bold.ttf">
-            <string>Gilroy-Bold</string>
-        </array>
-        <array key="Gilroy-Regular.ttf">
-            <string>Gilroy-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BlogCollectionViewCell" id="gTV-IL-0wX" customClass="BlogCollectionViewCell" customModule="TripGuide" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="397" height="320"/>
+            <rect key="frame" x="0.0" y="0.0" width="388" height="197"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="397" height="320"/>
+                <rect key="frame" x="0.0" y="0.0" width="388" height="197"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA7-ya-Pte">
-                        <rect key="frame" x="10" y="10" width="377" height="26"/>
-                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA7-ya-Pte">
+                        <rect key="frame" x="10" y="77" width="81.666666666666671" height="53.666666666666657"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KMw-JK-3VQ">
-                        <rect key="frame" x="0.0" y="46" width="397" height="274"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kyu-pJ-Dcx">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="397" id="U8i-lr-E4k"/>
+                            <constraint firstAttribute="width" constant="50" id="rbg-Fc-7St"/>
+                            <constraint firstAttribute="height" constant="50" id="t18-oL-M68"/>
                         </constraints>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-0L-jbZ">
+                        <rect key="frame" x="10" y="137.33333333333334" width="368" height="57.666666666666657"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="368" id="hTp-WE-pRK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="KMw-JK-3VQ" secondAttribute="trailing" id="ArW-jh-l6G"/>
-                <constraint firstAttribute="bottom" secondItem="KMw-JK-3VQ" secondAttribute="bottom" id="Cly-f1-SJd"/>
-                <constraint firstAttribute="trailing" secondItem="qA7-ya-Pte" secondAttribute="trailing" constant="10" id="bDe-fN-vIQ"/>
-                <constraint firstItem="KMw-JK-3VQ" firstAttribute="top" secondItem="qA7-ya-Pte" secondAttribute="bottom" constant="10" id="fQs-jL-8XM"/>
-                <constraint firstItem="KMw-JK-3VQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kju-Wh-tz9"/>
-                <constraint firstItem="qA7-ya-Pte" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="m15-yj-bsj"/>
-                <constraint firstItem="qA7-ya-Pte" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="yan-Bp-Med"/>
+                <constraint firstItem="qA7-ya-Pte" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3xx-ww-WuU"/>
+                <constraint firstItem="dX5-0L-jbZ" firstAttribute="top" secondItem="qA7-ya-Pte" secondAttribute="bottom" constant="6.6666666666666714" id="66P-Yd-k3h"/>
+                <constraint firstAttribute="bottom" secondItem="dX5-0L-jbZ" secondAttribute="bottom" constant="2" id="Cci-r9-BhY"/>
+                <constraint firstItem="dX5-0L-jbZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="GkE-XW-5rw"/>
+                <constraint firstItem="kyu-pJ-Dcx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="W0A-Kk-1Ja"/>
+                <constraint firstItem="qA7-ya-Pte" firstAttribute="top" secondItem="kyu-pJ-Dcx" secondAttribute="bottom" constant="17" id="bS0-Dh-Gbj"/>
+                <constraint firstAttribute="trailing" secondItem="dX5-0L-jbZ" secondAttribute="trailing" constant="10" id="e3n-yd-OoR"/>
+                <constraint firstItem="kyu-pJ-Dcx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kTw-ZD-IGA"/>
             </constraints>
-            <size key="customSize" width="397" height="320"/>
+            <size key="customSize" width="388" height="197"/>
             <connections>
                 <outlet property="headerLbl" destination="qA7-ya-Pte" id="KCa-jT-bdg"/>
-                <outlet property="textView" destination="KMw-JK-3VQ" id="VuV-TZ-30C"/>
+                <outlet property="textLbl" destination="dX5-0L-jbZ" id="By8-wD-NYG"/>
+                <outlet property="touristImage" destination="kyu-pJ-Dcx" id="cao-uD-Td4"/>
             </connections>
-            <point key="canvasLocation" x="19.083969465648853" y="85.91549295774648"/>
+            <point key="canvasLocation" x="12.213740458015266" y="41.197183098591552"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
