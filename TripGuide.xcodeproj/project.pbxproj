@@ -26,6 +26,10 @@
 		804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7929A6011400A3014A /* ToursDViewController.swift */; };
 		804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */; };
 		804E6D7E29A6013F00A3014A /* ToursDetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */; };
+		807712E329A76B7D00124195 /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807712E129A76B7D00124195 /* BlogCollectionViewCell.swift */; };
+		807712E429A76B7D00124195 /* BlogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807712E229A76B7D00124195 /* BlogCollectionViewCell.xib */; };
+		807712E729A7759300124195 /* WritingBlog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807712E629A7759300124195 /* WritingBlog.storyboard */; };
+		807712E929A775A200124195 /* WritingBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807712E829A775A200124195 /* WritingBlogViewController.swift */; };
 		808120FF29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */; };
 		8081210029A4CA1900A3DDBD /* WinteerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */; };
 		80919121299FC74A00850F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919120299FC74A00850F46 /* AppDelegate.swift */; };
@@ -68,6 +72,8 @@
 		80B2639729A1509300A0F3EF /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919192299FCAA100850F46 /* Gilroy-Bold.ttf */; };
 		80B2639829A1509500A0F3EF /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919191299FCAA100850F46 /* Gilroy-Regular.ttf */; };
 		80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80919193299FCAA100850F46 /* Gotham-Bold.otf */; };
+		80B7023329A7634A00B952FE /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B7023229A7634A00B952FE /* BlogViewController.swift */; };
+		80B7023529A763B600B952FE /* BlogStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B7023429A763B600B952FE /* BlogStoryBoard.storyboard */; };
 		80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */; };
 		80BCE77929A12476001E0E5D /* seaside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77829A12476001E0E5D /* seaside.swift */; };
 		80BCE77C29A12920001E0E5D /* SeasidesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BCE77A29A12920001E0E5D /* SeasidesCollectionViewCell.swift */; };
@@ -104,6 +110,10 @@
 		804E6D7929A6011400A3014A /* ToursDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDViewController.swift; sourceTree = "<group>"; };
 		804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDetTableViewCell.swift; sourceTree = "<group>"; };
 		804E6D7C29A6013F00A3014A /* ToursDetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursDetTableViewCell.xib; sourceTree = "<group>"; };
+		807712E129A76B7D00124195 /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
+		807712E229A76B7D00124195 /* BlogCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogCollectionViewCell.xib; sourceTree = "<group>"; };
+		807712E629A7759300124195 /* WritingBlog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WritingBlog.storyboard; sourceTree = "<group>"; };
+		807712E829A775A200124195 /* WritingBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingBlogViewController.swift; sourceTree = "<group>"; };
 		808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinteerCollectionViewCell.swift; sourceTree = "<group>"; };
 		808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinteerCollectionViewCell.xib; sourceTree = "<group>"; };
 		8091911D299FC74A00850F46 /* TripGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +157,8 @@
 		809D608929A38EAC00E9EBBA /* ResortsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortsViewController.swift; sourceTree = "<group>"; };
 		809D608C29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortHotelsTableViewCell.swift; sourceTree = "<group>"; };
 		809D608D29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResortHotelsTableViewCell.xib; sourceTree = "<group>"; };
+		80B7023229A7634A00B952FE /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		80B7023429A763B600B952FE /* BlogStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlogStoryBoard.storyboard; sourceTree = "<group>"; };
 		80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideApiManager.swift; sourceTree = "<group>"; };
 		80BCE77829A12476001E0E5D /* seaside.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seaside.swift; sourceTree = "<group>"; };
 		80BCE77A29A12920001E0E5D /* SeasidesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasidesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -283,6 +295,24 @@
 			path = ToursTableView;
 			sourceTree = "<group>";
 		};
+		807712E029A76B6900124195 /* BlogCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				807712E129A76B7D00124195 /* BlogCollectionViewCell.swift */,
+				807712E229A76B7D00124195 /* BlogCollectionViewCell.xib */,
+			);
+			path = BlogCollectionView;
+			sourceTree = "<group>";
+		};
+		807712E529A7758400124195 /* WritingBlog */ = {
+			isa = PBXGroup;
+			children = (
+				807712E629A7759300124195 /* WritingBlog.storyboard */,
+				807712E829A775A200124195 /* WritingBlogViewController.swift */,
+			);
+			path = WritingBlog;
+			sourceTree = "<group>";
+		};
 		808120FC29A4C9FB00A3DDBD /* Winter */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +440,7 @@
 		80919148299FC8D900850F46 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				80B7022E29A7631A00B952FE /* MyBlog */,
 				80D429ED29A6752800BF26E8 /* collectionView */,
 				80919149299FC8E500850F46 /* Settings.storyboard */,
 				8091914A299FC8E500850F46 /* SettingsViewController.swift */,
@@ -571,6 +602,25 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		80B7022E29A7631A00B952FE /* MyBlog */ = {
+			isa = PBXGroup;
+			children = (
+				807712E529A7758400124195 /* WritingBlog */,
+				807712E029A76B6900124195 /* BlogCollectionView */,
+				80B7022F29A7632500B952FE /* ViewContBlog */,
+			);
+			path = MyBlog;
+			sourceTree = "<group>";
+		};
+		80B7022F29A7632500B952FE /* ViewContBlog */ = {
+			isa = PBXGroup;
+			children = (
+				80B7023229A7634A00B952FE /* BlogViewController.swift */,
+				80B7023429A763B600B952FE /* BlogStoryBoard.storyboard */,
+			);
+			path = ViewContBlog;
+			sourceTree = "<group>";
+		};
 		80CE7AFD29A3C3F200874F63 /* HotelsDetailsWinter */ = {
 			isa = PBXGroup;
 			children = (
@@ -666,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */,
+				80B7023529A763B600B952FE /* BlogStoryBoard.storyboard in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
 				802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */,
@@ -686,7 +737,9 @@
 				802A1DB729A4D6EA00F5FB5B /* Summer.storyboard in Resources */,
 				80919171299FC9DD00850F46 /* Details.storyboard in Resources */,
 				80BCE77D29A12920001E0E5D /* SeasidesCollectionViewCell.xib in Resources */,
+				807712E429A76B7D00124195 /* BlogCollectionViewCell.xib in Resources */,
 				809D608F29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib in Resources */,
+				807712E729A7759300124195 /* WritingBlog.storyboard in Resources */,
 				8091916D299FC9D200850F46 /* HotelCollectionViewCell.xib in Resources */,
 				809D608829A38E9C00E9EBBA /* ResortHotels.storyboard in Resources */,
 				80919130299FC74C00850F46 /* LaunchScreen.storyboard in Resources */,
@@ -713,12 +766,14 @@
 				80919158299FC95C00850F46 /* FavoriteViewController.swift in Sources */,
 				80919180299FCA4900850F46 /* CityDetailsViewController.swift in Sources */,
 				80BCE77729A1245F001E0E5D /* SeasideApiManager.swift in Sources */,
+				807712E929A775A200124195 /* WritingBlogViewController.swift in Sources */,
 				80919186299FCA7900850F46 /* hotelsAPIManager.swift in Sources */,
 				802E425C29A6273A00F6A245 /* TourDetailsTappedViewController.swift in Sources */,
 				809D608A29A38EAC00E9EBBA /* ResortsViewController.swift in Sources */,
 				80348E2C29A5EAC600D192B3 /* TourApiManager.swift in Sources */,
 				8091917C299FCA3200850F46 /* ExploreViewController.swift in Sources */,
 				80CE7AFF29A3C41400874F63 /* WHotelsDetailsViewController.swift in Sources */,
+				807712E329A76B7D00124195 /* BlogCollectionViewCell.swift in Sources */,
 				809D608E29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift in Sources */,
 				80BCE77929A12476001E0E5D /* seaside.swift in Sources */,
 				80C83B3029A37A3100797B8A /* WinterAPIManager.swift in Sources */,
@@ -746,6 +801,7 @@
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
 				804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
+				80B7023329A7634A00B952FE /* BlogViewController.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,
 				80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */,
 				8091918D299FCA8800850F46 /* City.swift in Sources */,
