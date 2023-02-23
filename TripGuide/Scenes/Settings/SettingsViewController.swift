@@ -60,7 +60,7 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 10, left: 5, bottom: 0, right: 0)
+        UIEdgeInsets(top: 5, left: 5, bottom: 0, right: 0)
     }
     
     /// Needs to Be configured

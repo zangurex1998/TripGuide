@@ -21,6 +21,7 @@ class BlogViewController: UIViewController {
         setUpView()
         setUpRightButton()
         setUpCollectionView()
+        navigationItem.backButtonTitle = ""
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +39,7 @@ class BlogViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "BlogCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BlogCollectionViewCell")
+        
     }
     
     func fetchCoreData(){
@@ -87,8 +89,7 @@ extension BlogViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         let result = blogFetched[indexPath.row]
         cell.headerLbl.text = result.header
-        cell.textView.text = result.text
-        
+        cell.textLbl.text = result.text
         return cell
     }
     
@@ -96,10 +97,12 @@ extension BlogViewController: UICollectionViewDataSource, UICollectionViewDelega
         UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 3)
+        CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
    
     
     
     
 }
+
+
