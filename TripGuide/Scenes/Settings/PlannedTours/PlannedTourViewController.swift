@@ -75,8 +75,8 @@ extension PlannedTourViewController: UITableViewDataSource{
         
         cell.tourName.text = result.name
         cell.tourImage.kf.setImage(with: URL(string: result.image ?? ""))
-        cell.phonNum.text = "Contact : \(result.phoneNumb ?? "")"
-        cell.priceLbl.text = result.tourPrice
+//        cell.phonNum.text = "Contact : \(result.phoneNumb ?? "")"
+//        cell.priceLbl.text = result.tourPrice
         return cell
     }
     
