@@ -37,11 +37,11 @@ class WritingBlogViewController: UIViewController {
         guard let appDelegate = (UIApplication.shared.delegate as? AppDelegate) else {return}
         let container = appDelegate.persistentContainer
         let context = container.viewContext
-        guard let entity = NSEntityDescription.entity(forEntityName: "Blog", in: context) else {return}
+        guard let entity = NSEntityDescription.entity(forEntityName: "NewBlog", in: context) else {return}
         let note = NSManagedObject(entity: entity, insertInto: context)
         
         note.setValue(header.text, forKey: "header")
-        note.setValue(content.text, forKey: "content")
+        note.setValue(content.text, forKey: "text")
         
         do{
             print("saved")

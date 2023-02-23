@@ -15,7 +15,7 @@ class BlogViewController: UIViewController {
     
     
     
-    var blogFetched:[Blog] = []
+    var blogFetched:[NewBlog] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -46,10 +46,10 @@ class BlogViewController: UIViewController {
         let context = container.viewContext
         
         
-        let request = NSFetchRequest<Blog>(entityName: "Blog")
+        let request = NSFetchRequest<NewBlog>(entityName: "NewBlog")
        
         do{
-           // request.resultType = NSFetchRequestResultType.dictionaryResultType
+        
             blogFetched = try context.fetch(request)
         }
         catch{
@@ -87,7 +87,7 @@ extension BlogViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         let result = blogFetched[indexPath.row]
         cell.headerLbl.text = result.header
-        cell.textView.text = result.content
+        cell.textView.text = result.text
         
         return cell
     }
