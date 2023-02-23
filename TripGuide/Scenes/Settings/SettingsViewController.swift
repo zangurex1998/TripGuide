@@ -72,6 +72,9 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
         case 5 :
             let vc = UIStoryboard(name: "BlogStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "blog")
             navigationController?.pushViewController(vc, animated: true)
+        case 2 :
+            let vc = UIStoryboard(name: "PlannedTour", bundle: nil).instantiateViewController(withIdentifier: "plannedTour")
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

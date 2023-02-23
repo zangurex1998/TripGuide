@@ -131,7 +131,7 @@ extension FavoriteViewController: UITableViewDelegate{
         } else if indexPath.row == 0 {
             let vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewController(withIdentifier: "summer")
             navigationController?.pushViewController(vc, animated: true)
-        }else{
+        }else {
             let vc = UIStoryboard(name: "ToursDetails", bundle: nil).instantiateViewController(withIdentifier: "ToursDetails")
             navigationController?.pushViewController(vc, animated: true)
         }
