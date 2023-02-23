@@ -24,7 +24,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.backButtonTitle = ""
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .black, title: "Profile", preferredLargeTitle: false
         )
         setUpCollectionView()
@@ -68,6 +68,9 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
         switch indexPath.row {
         case 0 :
             let vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewController(withIdentifier: "summer")
+            navigationController?.pushViewController(vc, animated: true)
+        case 5 :
+            let vc = UIStoryboard(name: "BlogStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "blog")
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
