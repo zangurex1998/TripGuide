@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 class WritingBlogViewController: UIViewController {
     
     //MARK: - Outlets
@@ -16,6 +17,12 @@ class WritingBlogViewController: UIViewController {
     
     @IBOutlet weak var clearAll: UIButton!
     @IBOutlet weak var save: UIButton!
+    
+    
+    //MARK: - Properties
+    
+    var player: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -37,6 +44,7 @@ class WritingBlogViewController: UIViewController {
     
     @IBAction func didTapClearALl(_ sender: Any) {
         content.text = ""
+        
     }
     
     @IBAction func didTapSave(_ sender: Any) {
@@ -44,6 +52,7 @@ class WritingBlogViewController: UIViewController {
         content.text = ""
         header.text = ""
         print("Saved")
+        playSound()
         let alert = UIAlertController(title: "You have added new story to your blog 😊", message: "Thank you", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cool 😎", style: .default))
         present(alert, animated: true)
@@ -62,6 +71,12 @@ class WritingBlogViewController: UIViewController {
         content.layer.borderWidth = 0.5
         content.layer.borderColor = UIColor.systemOrange.cgColor
         header.attributedPlaceholder = NSAttributedString(string: "Tap Here For Header 🤩 ", attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemOrange])
+    }
+    
+    private func playSound(){
+        let url = Bundle.main.url(forResource: "applePay", withExtension: "mp3")
+        player = try? AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
     
     private func saveInCoreData(){

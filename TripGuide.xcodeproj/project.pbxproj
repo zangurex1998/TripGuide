@@ -91,6 +91,8 @@
 		80D429EC29A6727500BF26E8 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D429EB29A6727500BF26E8 /* CollectionDataSource.swift */; };
 		80D429F029A6753F00BF26E8 /* MyFavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D429EE29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.swift */; };
 		80D429F129A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D429EF29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib */; };
+		80D5E6A729A89E7600958BE6 /* applePay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80D5E6A629A89E7600958BE6 /* applePay.mp3 */; };
+		80D5E6A929A8A44E00958BE6 /* like.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80D5E6A829A8A44E00958BE6 /* like.mp3 */; };
 		80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */; };
 		80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -181,6 +183,8 @@
 		80D429EB29A6727500BF26E8 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		80D429EE29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 		80D429EF29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFavoritesCollectionViewCell.xib; sourceTree = "<group>"; };
+		80D5E6A629A89E7600958BE6 /* applePay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = applePay.mp3; sourceTree = "<group>"; };
+		80D5E6A829A8A44E00958BE6 /* like.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = like.mp3; sourceTree = "<group>"; };
 		80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideTableViewCell.swift; sourceTree = "<group>"; };
 		80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasideTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -391,6 +395,7 @@
 				80919190299FCA9600850F46 /* CustomFonts */,
 				80919189299FCA7F00850F46 /* Model */,
 				80919182299FCA7000850F46 /* ApiManager */,
+				80D5E6A529A89E7600958BE6 /* Sound Effects */,
 				80919143299FC8B700850F46 /* Extensions */,
 				80919137299FC75100850F46 /* App */,
 				80919138299FC75D00850F46 /* Scenes */,
@@ -670,6 +675,15 @@
 			path = collectionView;
 			sourceTree = "<group>";
 		};
+		80D5E6A529A89E7600958BE6 /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				80D5E6A829A8A44E00958BE6 /* like.mp3 */,
+				80D5E6A629A89E7600958BE6 /* applePay.mp3 */,
+			);
+			path = "Sound Effects";
+			sourceTree = "<group>";
+		};
 		80FCEDB129A13E490032BB39 /* Seaside */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,11 +790,13 @@
 				8091916D299FC9D200850F46 /* HotelCollectionViewCell.xib in Resources */,
 				809D608829A38E9C00E9EBBA /* ResortHotels.storyboard in Resources */,
 				80919130299FC74C00850F46 /* LaunchScreen.storyboard in Resources */,
+				80D5E6A729A89E7600958BE6 /* applePay.mp3 in Resources */,
 				80919181299FCA4900850F46 /* CityDetail.storyboard in Resources */,
 				8091912D299FC74C00850F46 /* Assets.xcassets in Resources */,
 				80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */,
 				8091914B299FC8E500850F46 /* Settings.storyboard in Resources */,
 				802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */,
+				80D5E6A929A8A44E00958BE6 /* like.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

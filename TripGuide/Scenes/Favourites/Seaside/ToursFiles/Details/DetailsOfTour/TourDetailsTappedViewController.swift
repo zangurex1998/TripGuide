@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 import CoreData
+import AVFoundation
 class TourDetailsTappedViewController: UIViewController {
     //MARK: - Outlets
         
@@ -29,7 +30,7 @@ class TourDetailsTappedViewController: UIViewController {
     @IBOutlet weak var addToPlanslbl: UILabel!
     
     //MARK: - Properties
-    
+    var player: AVAudioPlayer!
     var tName: String?
     var tImage: String?
     var tDetails: String?
@@ -56,11 +57,19 @@ class TourDetailsTappedViewController: UIViewController {
     
     @IBAction func didTapAddToPlans(_ sender: Any) {
             print("Tapped add To Plans")
+            playSound()
             save()
     }
     
     
     //MARK: - Methods
+    
+    private func playSound(){
+        let url = Bundle.main.url(forResource: "applePay", withExtension:  "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
     private func setUpUI(){
         addToPlans.layer.cornerRadius = 10
         addToPlanslbl.layer.masksToBounds = true
