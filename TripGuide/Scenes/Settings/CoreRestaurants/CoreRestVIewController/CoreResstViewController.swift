@@ -22,11 +22,13 @@ class CoreResstViewController: UIViewController {
         super.viewDidLoad()
         setUpCollectionView()
         fetchFromRest()
-       
+        view.backgroundColor = .black
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Restaurants ⭐️", preferredLargeTitle: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchFromRest()
         self.collectionView.reloadData()
         
     }
@@ -41,6 +43,7 @@ class CoreResstViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "CoreRestCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CoreRestCollectionViewCell")
+        collectionView.backgroundColor = .black
     }
     
     /// Fetching from RestuarantsCoreData
@@ -64,7 +67,7 @@ class CoreResstViewController: UIViewController {
 
 }
 
-extension CoreResstViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension CoreResstViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         fetchedRest.count
     }
@@ -75,5 +78,11 @@ extension CoreResstViewController: UICollectionViewDataSource, UICollectionViewD
         return cell
     }
     
-    
+}
+
+extension CoreResstViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: 5, left: 2, bottom: 0, right: 2)
+    }
+     
 }

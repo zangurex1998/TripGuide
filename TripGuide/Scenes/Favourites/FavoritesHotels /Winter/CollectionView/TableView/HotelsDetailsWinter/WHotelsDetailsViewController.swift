@@ -94,7 +94,6 @@ class WHotelsDetailsViewController: UIViewController {
         guard let hrate = rate  else {return}
         hotels.setValue(hotelName.text, forKey: "name")
         hotels.setValue(image, forKey: "image")
-       // hotels.setValue(, forKey: <#T##String#>)
         hotels.setValue(hrate, forKey: "rate")
         
         

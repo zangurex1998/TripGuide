@@ -17,7 +17,10 @@ class CoreRestCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var restLocation: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        self.backgroundColor = .black
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.cyan.cgColor
+        self.layer.cornerRadius = 7 
     }
     
     func configure(with rest : CoreRestaurants){

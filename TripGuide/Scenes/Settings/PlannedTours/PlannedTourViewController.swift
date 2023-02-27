@@ -21,6 +21,7 @@ class PlannedTourViewController: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         fetchingFromCore()
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Tours ⭐️", preferredLargeTitle: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

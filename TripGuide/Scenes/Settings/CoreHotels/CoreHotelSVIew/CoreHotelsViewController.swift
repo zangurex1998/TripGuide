@@ -19,6 +19,7 @@ class CoreHotelsViewController: UIViewController {
         setUpCollectionView()
         fetchData()
         view.backgroundColor = .black
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Hotels ⭐️", preferredLargeTitle: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
