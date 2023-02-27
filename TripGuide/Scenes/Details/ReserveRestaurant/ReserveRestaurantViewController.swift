@@ -71,11 +71,11 @@ class ReserveRestaurantViewController: UIViewController {
         let restaurant = NSManagedObject(entity: entity, insertInto: context)
         
         guard let image = restImage else { return }
-     //   guard let average = averageRate else { return }
+        guard let average = restRating else { return }
         restaurant.setValue(nameLbl.text, forKey: "name")
         restaurant.setValue(image, forKey: "image")
-        restaurant.setValue(addressLbl.text, forKey: "address")
-      //  restaurant.setValue(average, forKey: "rate")
+        restaurant.setValue(cityLbl.text, forKey: "address")
+        restaurant.setValue(average, forKey: "rate")
         
         do{
             try context.save()
