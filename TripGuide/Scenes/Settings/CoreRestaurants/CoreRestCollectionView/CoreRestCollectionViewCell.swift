@@ -27,7 +27,7 @@ class CoreRestCollectionViewCell: UICollectionViewCell {
     func configure(with rest : CoreRestaurants){
         restImage.kf.setImage(with: URL(string: rest.image ?? ""))
         restName.text = rest.name
-      //  restRate.text = "⭐️\(rest.rate)"
+        restRate.text = "⭐️\(rest.rate)"
         restLocation.text = rest.address
         restImage.layer.cornerRadius = 12
     }
