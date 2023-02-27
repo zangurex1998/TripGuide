@@ -22,6 +22,7 @@ class ToursDetTableViewCell: UITableViewCell {
     
     func configure(with tour: Tour){
         tournNameLbl.text = tour.name
+        tourImage.kf.indicatorType = .activity
         tourImage.kf.setImage(with: URL(string: tour.image))
         ageLbl.text = tour.ages
         priceLbl.text = "Price: \(tour.price)"

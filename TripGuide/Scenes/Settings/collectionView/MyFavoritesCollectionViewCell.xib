@@ -41,16 +41,6 @@
                             <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </buttonConfiguration>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-q4-HkH">
-                        <rect key="frame" x="284" y="10" width="40" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="40" id="g72-Dt-EdJ"/>
-                            <constraint firstAttribute="height" constant="50" id="kdc-AI-E0S"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -58,11 +48,8 @@
                 <constraint firstAttribute="trailing" secondItem="w9u-XE-O3R" secondAttribute="trailing" constant="30" id="5Eg-cd-HxN"/>
                 <constraint firstItem="w9a-TK-Gkz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="5Ir-bU-F4E"/>
                 <constraint firstItem="w9u-XE-O3R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="B6b-Zv-eJm"/>
-                <constraint firstItem="UKX-q4-HkH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Od3-ME-fq9"/>
                 <constraint firstItem="w9a-TK-Gkz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="T9v-JE-om2"/>
-                <constraint firstAttribute="bottom" secondItem="UKX-q4-HkH" secondAttribute="bottom" constant="10" id="XTI-xU-1tX"/>
                 <constraint firstAttribute="bottom" secondItem="w9a-TK-Gkz" secondAttribute="bottom" constant="2" id="hrt-v0-mOj"/>
-                <constraint firstAttribute="trailing" secondItem="UKX-q4-HkH" secondAttribute="trailing" constant="20" id="lMM-UB-VhZ"/>
                 <constraint firstAttribute="bottom" secondItem="w9u-XE-O3R" secondAttribute="bottom" constant="10" id="woI-Rc-6Tf"/>
             </constraints>
             <size key="customSize" width="344" height="66"/>
