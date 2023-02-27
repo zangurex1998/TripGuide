@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import CoreData
 class ReserveRestaurantViewController: UIViewController {
  //MARK: - Outlets
     @IBOutlet weak var restaurantImage: UIImageView!
@@ -55,11 +56,35 @@ class ReserveRestaurantViewController: UIViewController {
  
     
     @IBAction func didTapReserveTable(_ sender: Any) {
-  
+        save()
 
     }
 
 
+    /// Saving to CoreData
+    
+    private func save(){
+        guard let appDelegate = (UIApplication.shared.delegate as? AppDelegate) else {return}
+        let container = appDelegate.persistentContainer
+        let context = container.viewContext
+        guard let entity = NSEntityDescription.entity(forEntityName: "CoreRestaurants", in: context) else {return}
+        let restaurant = NSManagedObject(entity: entity, insertInto: context)
+        
+        guard let image = restImage else { return }
+     //   guard let average = averageRate else { return }
+        restaurant.setValue(nameLbl.text, forKey: "name")
+        restaurant.setValue(image, forKey: "image")
+        restaurant.setValue(addressLbl.text, forKey: "address")
+      //  restaurant.setValue(average, forKey: "rate")
+        
+        do{
+            try context.save()
+        }
+        catch{
+            print(error)
+        }
+                
+    }
     
 
     

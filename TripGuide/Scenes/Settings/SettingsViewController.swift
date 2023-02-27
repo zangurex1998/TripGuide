@@ -78,6 +78,9 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
         case 3 :
             let vc = UIStoryboard(name: "CoreHotels", bundle: nil).instantiateViewController(withIdentifier: "coreHotel")
             navigationController?.pushViewController(vc, animated: true)
+        case 4 :
+            let vc = UIStoryboard(name: "CoreRestaurants", bundle: nil).instantiateViewController(withIdentifier: "coreRest")
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

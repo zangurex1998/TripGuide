@@ -89,6 +89,15 @@ class WHotelsDetailsViewController: UIViewController {
         let context = container.viewContext
         guard let entity = NSEntityDescription.entity(forEntityName: "CoreHotels", in: context) else {return}
         let hotels = NSManagedObject(entity: entity, insertInto: context)
+      
+        guard let image = hotelString else {return}
+        guard let hrate = rate  else {return}
+        hotels.setValue(hotelName.text, forKey: "name")
+        hotels.setValue(image, forKey: "image")
+       // hotels.setValue(, forKey: <#T##String#>)
+        hotels.setValue(hrate, forKey: "rate")
+        
+        
         do{
             try context.save()
             print("saved")
@@ -97,12 +106,7 @@ class WHotelsDetailsViewController: UIViewController {
             print(error)
         }
         
-        guard let image = hotelString else {return}
-        guard let hrate = rate  else {return}
-        hotels.setValue(hotelName.text, forKey: "name")
-        hotels.setValue(image, forKey: "image")
-       // hotels.setValue(, forKey: <#T##String#>)
-        hotels.setValue(hrate, forKey: "rate")
+       
         
         
     }
