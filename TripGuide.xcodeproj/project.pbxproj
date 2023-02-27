@@ -82,6 +82,12 @@
 		809D608A29A38EAC00E9EBBA /* ResortsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D608929A38EAC00E9EBBA /* ResortsViewController.swift */; };
 		809D608E29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D608C29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift */; };
 		809D608F29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809D608D29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib */; };
+		80B116E729AD362E00B73A2E /* amusement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B116E629AD362E00B73A2E /* amusement.swift */; };
+		80B116E929AD368100B73A2E /* AmusementApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B116E829AD368100B73A2E /* AmusementApiManager.swift */; };
+		80B116ED29AD37D400B73A2E /* AmusementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B116EB29AD37D400B73A2E /* AmusementTableViewCell.swift */; };
+		80B116EE29AD37D400B73A2E /* AmusementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B116EC29AD37D400B73A2E /* AmusementTableViewCell.xib */; };
+		80B116F229AD3A0200B73A2E /* AmusementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B116F029AD3A0200B73A2E /* AmusementCollectionViewCell.swift */; };
+		80B116F329AD3A0200B73A2E /* AmusementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B116F129AD3A0200B73A2E /* AmusementCollectionViewCell.xib */; };
 		80B2639729A1509300A0F3EF /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919192299FCAA100850F46 /* Gilroy-Bold.ttf */; };
 		80B2639829A1509500A0F3EF /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80919191299FCAA100850F46 /* Gilroy-Regular.ttf */; };
 		80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80919193299FCAA100850F46 /* Gotham-Bold.otf */; };
@@ -185,6 +191,12 @@
 		809D608929A38EAC00E9EBBA /* ResortsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortsViewController.swift; sourceTree = "<group>"; };
 		809D608C29A390DA00E9EBBA /* ResortHotelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortHotelsTableViewCell.swift; sourceTree = "<group>"; };
 		809D608D29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResortHotelsTableViewCell.xib; sourceTree = "<group>"; };
+		80B116E629AD362E00B73A2E /* amusement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amusement.swift; sourceTree = "<group>"; };
+		80B116E829AD368100B73A2E /* AmusementApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmusementApiManager.swift; sourceTree = "<group>"; };
+		80B116EB29AD37D400B73A2E /* AmusementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmusementTableViewCell.swift; sourceTree = "<group>"; };
+		80B116EC29AD37D400B73A2E /* AmusementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmusementTableViewCell.xib; sourceTree = "<group>"; };
+		80B116F029AD3A0200B73A2E /* AmusementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmusementCollectionViewCell.swift; sourceTree = "<group>"; };
+		80B116F129AD3A0200B73A2E /* AmusementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmusementCollectionViewCell.xib; sourceTree = "<group>"; };
 		80B7023229A7634A00B952FE /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		80B7023429A763B600B952FE /* BlogStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlogStoryBoard.storyboard; sourceTree = "<group>"; };
 		80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideApiManager.swift; sourceTree = "<group>"; };
@@ -227,6 +239,7 @@
 		802A1DAF29A4D65C00F5FB5B /* SeeAllFiles */ = {
 			isa = PBXGroup;
 			children = (
+				80B116EA29AD378B00B73A2E /* amusementFiles */,
 				802A1DB829A4D73500F5FB5B /* summerTableViewFiles */,
 				802A1DB029A4D67300F5FB5B /* seeAllView */,
 			);
@@ -652,6 +665,7 @@
 				80BCE77629A1245F001E0E5D /* SeasideApiManager.swift */,
 				80C83B2F29A37A3100797B8A /* WinterAPIManager.swift */,
 				80348E2B29A5EAC600D192B3 /* TourApiManager.swift */,
+				80B116E829AD368100B73A2E /* AmusementApiManager.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -667,6 +681,7 @@
 				80348E2929A5EA2600D192B3 /* Tour.swift */,
 				80D429E929A671D700BF26E8 /* CollectionModel.swift */,
 				80D429EB29A6727500BF26E8 /* CollectionDataSource.swift */,
+				80B116E629AD362E00B73A2E /* amusement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -708,6 +723,25 @@
 				809D608D29A390DA00E9EBBA /* ResortHotelsTableViewCell.xib */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		80B116EA29AD378B00B73A2E /* amusementFiles */ = {
+			isa = PBXGroup;
+			children = (
+				80B116EF29AD39DF00B73A2E /* CollectionView */,
+				80B116EB29AD37D400B73A2E /* AmusementTableViewCell.swift */,
+				80B116EC29AD37D400B73A2E /* AmusementTableViewCell.xib */,
+			);
+			path = amusementFiles;
+			sourceTree = "<group>";
+		};
+		80B116EF29AD39DF00B73A2E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				80B116F029AD3A0200B73A2E /* AmusementCollectionViewCell.swift */,
+				80B116F129AD3A0200B73A2E /* AmusementCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		80B7022E29A7631A00B952FE /* MyBlog */ = {
@@ -834,6 +868,7 @@
 			files = (
 				804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */,
 				80B7023529A763B600B952FE /* BlogStoryBoard.storyboard in Resources */,
+				80B116F329AD3A0200B73A2E /* AmusementCollectionViewCell.xib in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
 				802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */,
@@ -869,6 +904,7 @@
 				8091912D299FC74C00850F46 /* Assets.xcassets in Resources */,
 				80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */,
 				8041458B29ACBBEF00FACD68 /* CoreRestCollectionViewCell.xib in Resources */,
+				80B116EE29AD37D400B73A2E /* AmusementTableViewCell.xib in Resources */,
 				8091914B299FC8E500850F46 /* Settings.storyboard in Resources */,
 				802C6E2E299FD28500741CA8 /* Favorites.storyboard in Resources */,
 				80D5E6A929A8A44E00958BE6 /* like.mp3 in Resources */,
@@ -889,6 +925,7 @@
 				802A1DBB29A4D75600F5FB5B /* SummerTableViewCell.swift in Sources */,
 				80919163299FC99F00850F46 /* ReserveRestaurantViewController.swift in Sources */,
 				80919121299FC74A00850F46 /* AppDelegate.swift in Sources */,
+				80B116F229AD3A0200B73A2E /* AmusementCollectionViewCell.swift in Sources */,
 				80919158299FC95C00850F46 /* FavoriteViewController.swift in Sources */,
 				80919180299FCA4900850F46 /* CityDetailsViewController.swift in Sources */,
 				8041458A29ACBBEF00FACD68 /* CoreRestCollectionViewCell.swift in Sources */,
@@ -925,11 +962,14 @@
 				80348E2A29A5EA2600D192B3 /* Tour.swift in Sources */,
 				805AFE4529A79F2000F10D98 /* DataShouldBeFetched.xcdatamodeld in Sources */,
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
+				80B116E729AD362E00B73A2E /* amusement.swift in Sources */,
 				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
 				805AFE4E29A7D38E00F10D98 /* PlannedTourTableViewCell.swift in Sources */,
 				8041458529ACBBAB00FACD68 /* CoreResstViewController.swift in Sources */,
 				804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */,
+				80B116E929AD368100B73A2E /* AmusementApiManager.swift in Sources */,
+				80B116ED29AD37D400B73A2E /* AmusementTableViewCell.swift in Sources */,
 				8041457F29ACB04000FACD68 /* CoreHotCollectionViewCell.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
 				80B7023329A7634A00B952FE /* BlogViewController.swift in Sources */,
