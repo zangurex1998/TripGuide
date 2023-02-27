@@ -13,6 +13,7 @@
         <attribute name="rate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="NewBlog" representedClassName="NewBlog" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="header" optional="YES" attributeType="String"/>
         <attribute name="text" optional="YES" attributeType="String"/>
     </entity>

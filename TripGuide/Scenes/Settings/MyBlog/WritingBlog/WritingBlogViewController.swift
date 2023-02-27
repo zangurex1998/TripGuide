@@ -20,7 +20,7 @@ class WritingBlogViewController: UIViewController {
     
     
     //MARK: - Properties
-    
+    let date = Date().formatted(.dateTime)
     var player: AVAudioPlayer!
     
     override func viewDidLoad() {
@@ -88,7 +88,7 @@ class WritingBlogViewController: UIViewController {
         
         note.setValue(header.text, forKey: "header")
         note.setValue(content.text, forKey: "text")
-        
+        note.setValue(date, forKey: "date")
         do{
             print("saved")
             try context.save()

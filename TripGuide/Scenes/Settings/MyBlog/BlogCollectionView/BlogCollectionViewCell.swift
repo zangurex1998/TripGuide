@@ -14,10 +14,13 @@ class BlogCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var textLbl: UILabel!
     
     @IBOutlet weak var touristImage: UIImageView!
+    @IBOutlet weak var dateLbl: UILabel!
     
+    
+  
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+    
         setUpContentView()
     }
     
@@ -30,7 +33,7 @@ class BlogCollectionViewCell: UICollectionViewCell {
         touristImage.layer.cornerRadius = touristImage.frame.width / 2
         self.layer.cornerRadius = 5
         self.layer.borderColor = UIColor.systemBlue.cgColor
-        self.layer.borderWidth = 0.5
+        self.layer.borderWidth = 0.2
     }
     
     

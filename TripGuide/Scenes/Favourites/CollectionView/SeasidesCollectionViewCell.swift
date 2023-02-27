@@ -22,6 +22,7 @@ class SeasidesCollectionViewCell: UICollectionViewCell {
     }
         
         func configure(with sea: Seasides){
+            seaImage.kf.indicatorType = .activity
             seaImage.kf.setImage(with: URL(string: sea.image))
             beachName.text = sea.beach
         }

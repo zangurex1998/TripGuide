@@ -59,7 +59,7 @@ class FavoriteViewController: UIViewController {
        
         navigationItem.backButtonTitle = "" 
         navigationController?.tabBarItem.image = UIImage(systemName: "heart.fill")
-        configureNavigationBar(largeTitleColor: UIColor(hex: "a9e3e8"), backgoundColor: UIColor(hex: "011627"), tintColor: .red, title: "Suggestions", preferredLargeTitle: true)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Suggestions", preferredLargeTitle: true)
         seasideManager.fetchingSeasides {[weak self] sea in
             self?.seaFetched = sea.seasides
         }

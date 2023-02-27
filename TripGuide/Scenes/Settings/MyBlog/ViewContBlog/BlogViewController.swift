@@ -23,12 +23,14 @@ class BlogViewController: UIViewController {
         setUpRightButton()
         setUpCollectionView()
         navigationItem.backButtonTitle = ""
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchCoreData()
         self.collectionView.reloadData()
+        
     }
     
     private func setUpView(){
@@ -90,6 +92,7 @@ extension BlogViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         let result = blogFetched[indexPath.row]
         cell.headerLbl.text = result.header
+        cell.dateLbl.text = "\(result.date ?? "")"
         cell.textLbl.text = result.text
         return cell
     }
