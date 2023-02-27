@@ -13,7 +13,9 @@ class BlogViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var zeroBlogsView: UIView!
     
+    @IBOutlet weak var letsStartbutton: UIButton!
     
     var blogFetched:[NewBlog] = [].reversed()
     
@@ -23,17 +25,31 @@ class BlogViewController: UIViewController {
         setUpRightButton()
         setUpCollectionView()
         navigationItem.backButtonTitle = ""
-      
+       
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchCoreData()
         self.collectionView.reloadData()
+        setUpZeroBlogsView()
         
     }
     
+    private func setUpZeroBlogsView(){
+        if blogFetched.count == 0 {
+            zeroBlogsView.isHidden = false
+            
+            
+        }else if blogFetched.count > 0{
+            zeroBlogsView.isHidden = true
+        }
+    }
+    
     private func setUpView(){
+        letsStartbutton.backgroundColor = UIColor.lightGray
+        letsStartbutton.layer.cornerRadius = 12
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "My Blog", preferredLargeTitle: false)
         view.backgroundColor = .black
         
@@ -65,7 +81,7 @@ class BlogViewController: UIViewController {
     deinit {
         print("Blog Deinited Successfully !!!")
     }
-    
+  
     private func setUpRightButton(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "note.text.badge.plus"), style: .done, target: self, action: #selector(didSomething))
        // navigationItem.rightBarButtonItem?.tintColor = .red
@@ -76,6 +92,13 @@ class BlogViewController: UIViewController {
         let vc = UIStoryboard(name: "WritingBlog", bundle: nil).instantiateViewController(withIdentifier: "writingBlog")
         navigationController?.pushViewController(vc, animated: true)
     }
+    //MARK: - Actions
+    
+    @IBAction func didTapLetsStart(_ sender: Any) {
+        let vc = UIStoryboard(name: "WritingBlog", bundle: nil).instantiateViewController(withIdentifier: "writingBlog")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
   
 
