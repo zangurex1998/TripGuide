@@ -15,7 +15,8 @@ class BlogViewController: UIViewController {
     
     
     
-    var blogFetched:[NewBlog] = []
+    var blogFetched:[NewBlog] = [].reversed()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -52,7 +53,7 @@ class BlogViewController: UIViewController {
        
         do{
         
-            blogFetched = try context.fetch(request)
+            blogFetched = try context.fetch(request).reversed()
         }
         catch{
             print(error)

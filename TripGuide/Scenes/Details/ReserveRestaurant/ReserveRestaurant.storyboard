@@ -22,7 +22,7 @@
         <!--Reserve Restaurant View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="reserveRest" id="Y6W-OH-hqX" customClass="ReserveRestaurantViewController" customModule="TouristGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reserveRest" id="Y6W-OH-hqX" customClass="ReserveRestaurantViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                                     <constraint firstAttribute="height" constant="51" id="wQQ-dc-psx"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Reserve Table"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add To Favourites"/>
                                                 <connections>
                                                     <action selector="didTapReserveTable:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tgN-D3-JGY"/>
                                                 </connections>

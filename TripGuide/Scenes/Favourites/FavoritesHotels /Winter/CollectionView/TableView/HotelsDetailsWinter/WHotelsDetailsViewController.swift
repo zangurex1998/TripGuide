@@ -7,6 +7,8 @@
 
 import UIKit
 import Kingfisher
+import CoreData
+import AVFoundation
 class WHotelsDetailsViewController: UIViewController {
      //MARK: - Outlets
      /// Property amenities
@@ -30,7 +32,13 @@ class WHotelsDetailsViewController: UIViewController {
     @IBOutlet weak var refrigeratorLbl: UILabel!
     @IBOutlet weak var romanticLbl: UILabel!
     
+    /// Button Design
+
+    @IBOutlet weak var addFavouritesButton: UIButton!
+    
     //MARK: - Properties
+    ///AVAudioplayer
+    var player : AVAudioPlayer?
     var hotelString: String?
     var hotelNameTitle: String?
     var hName: String?
@@ -57,14 +65,58 @@ class WHotelsDetailsViewController: UIViewController {
       
     }
     
+
+    
+    
+    
     
     deinit {
         print("Deinited! Success")
     }
     
-
+    //MARK: - Actions
+    
+    @IBAction func didTapAddButton(_ sender: Any) {
+        saveData()
+        audioPLayer()
+    }
+    
+    //MARK: - Methods
+    
+    private func saveData(){
+        guard let appDelegate = (UIApplication.shared.delegate as? AppDelegate) else {return}
+        let container = appDelegate.persistentContainer
+        let context = container.viewContext
+        guard let entity = NSEntityDescription.entity(forEntityName: "CoreHotels", in: context) else {return}
+        let hotels = NSManagedObject(entity: entity, insertInto: context)
+        do{
+            try context.save()
+            print("saved")
+        }
+        catch{
+            print(error)
+        }
+        
+        guard let image = hotelString else {return}
+        guard let hrate = rate  else {return}
+        hotels.setValue(hotelName.text, forKey: "name")
+        hotels.setValue(image, forKey: "image")
+       // hotels.setValue(, forKey: <#T##String#>)
+        hotels.setValue(hrate, forKey: "rate")
+        
+        
+    }
+    
+    private func audioPLayer(){
+        guard let url = Bundle.main.url(forResource: "applePay", withExtension: "mp3") else {return}
+        player = try! AVAudioPlayer(contentsOf: url)
+        player?.play()
+    }
     
     private func setUpContentView(){
+        addFavouritesButton.layer.cornerRadius = 15
+        addFavouritesButton.backgroundColor = .systemGray
+        addFavouritesButton.tintColor = .cyan
         detailsView.layer.cornerRadius = 7
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: hotelNameTitle ?? "", preferredLargeTitle: true)
         hotelImage.kf.setImage(with: URL(string: hotelString ?? ""))

@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="358" width="393" height="608"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-Vl-79T">
-                                        <rect key="frame" x="0.0" y="-9" width="393" height="608"/>
+                                        <rect key="frame" x="0.0" y="-9" width="393" height="628"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-Xe-t5E">
                                                 <rect key="frame" x="20" y="121.66666666666669" width="353" height="20"/>
@@ -171,12 +171,22 @@
                                                     <constraint firstAttribute="trailing" secondItem="OhN-Np-NYb" secondAttribute="trailing" id="aNd-pY-nSi"/>
                                                 </constraints>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg9-rH-5uX">
+                                                <rect key="frame" x="100" y="522.33333333333337" width="193" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="WF6-0W-hfM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add To Favourites"/>
+                                                <connections>
+                                                    <action selector="didTapAddButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a6j-IB-JHf"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="5hh-Uo-8ws" secondAttribute="trailing" constant="20" id="2EP-LS-PTY"/>
                                             <constraint firstItem="R79-ar-ydM" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="4w8-WJ-Uig"/>
-                                            <constraint firstAttribute="bottom" secondItem="TLi-VJ-d9d" secondAttribute="bottom" constant="125.67" id="5RA-10-DNf"/>
                                             <constraint firstItem="Hfd-Xe-t5E" firstAttribute="trailing" secondItem="s8L-Xm-l6A" secondAttribute="trailing" id="8tV-J0-5Kp"/>
                                             <constraint firstItem="TLi-VJ-d9d" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="BnE-EF-dJh"/>
                                             <constraint firstItem="s8L-Xm-l6A" firstAttribute="top" secondItem="xso-xg-hzG" secondAttribute="bottom" constant="8" id="CWS-nU-28c"/>
@@ -185,9 +195,13 @@
                                             <constraint firstItem="5hh-Uo-8ws" firstAttribute="top" secondItem="s8L-Xm-l6A" secondAttribute="bottom" constant="10" id="Hb3-tD-Znj"/>
                                             <constraint firstItem="gdj-jD-OP8" firstAttribute="top" secondItem="R79-ar-ydM" secondAttribute="bottom" constant="20" id="IDn-8c-7UG"/>
                                             <constraint firstItem="Hfd-Xe-t5E" firstAttribute="leading" secondItem="s8L-Xm-l6A" secondAttribute="leading" id="M1S-ht-mBS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hg9-rH-5uX" secondAttribute="bottom" constant="60.670000000000002" id="MmU-iF-Gte"/>
                                             <constraint firstItem="gdj-jD-OP8" firstAttribute="leading" secondItem="Hfd-Xe-t5E" secondAttribute="leading" id="QlG-Oh-OcO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hg9-rH-5uX" secondAttribute="trailing" constant="100" id="QmF-tb-tnx"/>
                                             <constraint firstItem="s8L-Xm-l6A" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="20" id="TeJ-cp-ZdB"/>
                                             <constraint firstAttribute="trailing" secondItem="s8L-Xm-l6A" secondAttribute="trailing" constant="20" id="VbN-nK-fVP"/>
+                                            <constraint firstItem="Hg9-rH-5uX" firstAttribute="top" secondItem="TLi-VJ-d9d" secondAttribute="bottom" constant="40" id="YH0-3S-qlu"/>
+                                            <constraint firstItem="Hg9-rH-5uX" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="100" id="cQm-Bw-3dg"/>
                                             <constraint firstItem="R79-ar-ydM" firstAttribute="top" secondItem="Hfd-Xe-t5E" secondAttribute="bottom" constant="10" id="eMu-2X-ZyB"/>
                                             <constraint firstAttribute="trailing" secondItem="TLi-VJ-d9d" secondAttribute="trailing" constant="10" id="gWU-Ep-YVv"/>
                                             <constraint firstItem="xso-xg-hzG" firstAttribute="leading" secondItem="Rfu-Vl-79T" secondAttribute="leading" constant="15" id="hzb-GB-2Kj"/>
@@ -225,6 +239,7 @@
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
+                        <outlet property="addFavouritesButton" destination="Hg9-rH-5uX" id="8Es-n4-iAv"/>
                         <outlet property="descriptionLbl" destination="5hh-Uo-8ws" id="Pt4-tJ-MXN"/>
                         <outlet property="detailsView" destination="Rfu-Vl-79T" id="CDY-5P-w8T"/>
                         <outlet property="freebreakfastlbl" destination="ZVn-tF-tAT" id="NZJ-hI-iIm"/>
