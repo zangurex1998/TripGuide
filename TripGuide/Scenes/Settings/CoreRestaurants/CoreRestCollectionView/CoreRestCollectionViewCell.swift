@@ -20,7 +20,8 @@ class CoreRestCollectionViewCell: UICollectionViewCell {
         self.backgroundColor = .black
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.cyan.cgColor
-        self.layer.cornerRadius = 7 
+        self.layer.cornerRadius = 7
+    
     }
     
     func configure(with rest : CoreRestaurants){
@@ -28,6 +29,7 @@ class CoreRestCollectionViewCell: UICollectionViewCell {
         restName.text = rest.name
       //  restRate.text = "⭐️\(rest.rate)"
         restLocation.text = rest.address
+        restImage.layer.cornerRadius = 12
     }
 
 }

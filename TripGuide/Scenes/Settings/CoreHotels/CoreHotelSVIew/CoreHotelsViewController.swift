@@ -77,4 +77,5 @@ extension CoreHotelsViewController: UICollectionViewDataSource, UICollectionView
     
     
     
+    
 }
