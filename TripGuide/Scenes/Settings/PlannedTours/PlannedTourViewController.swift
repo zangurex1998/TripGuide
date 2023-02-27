@@ -48,7 +48,7 @@ class PlannedTourViewController: UIViewController {
         let request = NSFetchRequest<TourPlans>(entityName: "TourPlans")
         
         do{
-            fetchedPlan = try context.fetch(request)
+            fetchedPlan = try context.fetch(request).reversed()
         }
         catch{
             print(error)
@@ -58,6 +58,7 @@ class PlannedTourViewController: UIViewController {
     private func setUpTableView(){
         tableView.dataSource = self
         tableView.register(UINib(nibName: "PlannedTourTableViewCell", bundle: nil), forCellReuseIdentifier: "PlannedTourTableViewCell")
+        tableView.backgroundColor = .black
     }
     
 
