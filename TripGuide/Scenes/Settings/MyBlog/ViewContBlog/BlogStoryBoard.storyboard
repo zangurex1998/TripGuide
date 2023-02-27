@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Blog View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -27,12 +32,52 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iO-NT-AOb">
+                                <rect key="frame" x="0.0" y="276" width="393" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is nothing here yet. let's start journaling your journey in Georgia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FW-mq-nRK">
+                                        <rect key="frame" x="5" y="50" width="383" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="d0X-A8-BSp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4it-rG-Rvn">
+                                        <rect key="frame" x="125" y="127" width="143" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Let's Start">
+                                            <fontDescription key="titleFontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="22"/>
+                                            <color key="baseForegroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapLetsStart:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="abD-3X-LFP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="2CO-jt-haV"/>
+                                    <constraint firstAttribute="width" constant="393" id="2d1-zx-foM"/>
+                                    <constraint firstItem="2FW-mq-nRK" firstAttribute="centerX" secondItem="8iO-NT-AOb" secondAttribute="centerX" id="LTh-hR-9vR"/>
+                                    <constraint firstItem="2FW-mq-nRK" firstAttribute="top" secondItem="8iO-NT-AOb" secondAttribute="top" constant="50" id="NPs-Ne-RXd"/>
+                                    <constraint firstItem="4it-rG-Rvn" firstAttribute="top" secondItem="2FW-mq-nRK" secondAttribute="bottom" constant="20" id="Scf-E8-qrN"/>
+                                    <constraint firstAttribute="trailing" secondItem="4it-rG-Rvn" secondAttribute="trailing" constant="125" id="SjG-mf-XVs"/>
+                                    <constraint firstItem="2FW-mq-nRK" firstAttribute="leading" secondItem="8iO-NT-AOb" secondAttribute="leading" constant="5" id="lKv-dz-ufX"/>
+                                    <constraint firstItem="4it-rG-Rvn" firstAttribute="leading" secondItem="8iO-NT-AOb" secondAttribute="leading" constant="125" id="oNz-Kn-Hth"/>
+                                    <constraint firstAttribute="trailing" secondItem="2FW-mq-nRK" secondAttribute="trailing" constant="5" id="zmy-Dj-FEW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OBh-hd-wes" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8oH-2J-tJh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8iO-NT-AOb" secondAttribute="trailing" id="GG5-RY-je7"/>
+                            <constraint firstItem="8iO-NT-AOb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QY9-81-kJh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OBh-hd-wes" secondAttribute="bottom" id="Yud-fJ-5KX"/>
+                            <constraint firstItem="8iO-NT-AOb" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jGo-UB-fNg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OBh-hd-wes" secondAttribute="trailing" id="l3Q-ha-Uqt"/>
                             <constraint firstItem="OBh-hd-wes" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uEy-DQ-UGM"/>
                         </constraints>
@@ -40,6 +85,8 @@
                     <navigationItem key="navigationItem" id="5LR-73-mgl"/>
                     <connections>
                         <outlet property="collectionView" destination="OBh-hd-wes" id="70n-mB-Rkl"/>
+                        <outlet property="letsStartbutton" destination="4it-rG-Rvn" id="SOS-Mk-0un"/>
+                        <outlet property="zeroBlogsView" destination="8iO-NT-AOb" id="URe-9T-ng6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -66,6 +113,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
