@@ -82,7 +82,11 @@ extension CoreResstViewController: UICollectionViewDataSource{
 
 extension CoreResstViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 5, left: 2, bottom: 0, right: 2)
+        UIEdgeInsets(top: 10, left: 2, bottom: 0, right: 10)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 3)
     }
      
+   // CGSize(width: collectionView.frame.width, height: )
 }
