@@ -74,7 +74,7 @@ class ReserveRestaurantViewController: UIViewController {
      //   guard let average = averageRate else { return }
         restaurant.setValue(nameLbl.text, forKey: "name")
         restaurant.setValue(image, forKey: "image")
-        restaurant.setValue(addressLbl.text, forKey: "address")
+        restaurant.setValue(cityLbl.text, forKey: "address")
       //  restaurant.setValue(average, forKey: "rate")
         
         do{
