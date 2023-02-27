@@ -30,7 +30,7 @@ class FavoriteViewController: UIViewController {
     var seasideManager: SeasideApiManagerProtocol = SeasideApiManager()
     var winterManager: WinterApiManagerProtocol = WinterApiManager()
     var toursFetched: TourAPiManagerProtocol = TourApiManager()
-    
+    var fetchedAmusment: AmusementApiManagerProtocol = AmusementApiManager()
     var winterFetched: [Winter] = [] {
         didSet{
             self.tableView.reloadData()
@@ -50,7 +50,11 @@ class FavoriteViewController: UIViewController {
         }
     }
     
-    
+    lazy var amusement: [Amusment] = []{
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -71,6 +75,10 @@ class FavoriteViewController: UIViewController {
         toursFetched.fetchingTours {[weak self] tour in
             self?.tours = tour.tours
         }
+        fetchedAmusment.fetchingAmusement { [weak self] ammusement in
+            self?.amusement = ammusement.amusement
+        }
+        
       
     }
   
@@ -90,6 +98,7 @@ class FavoriteViewController: UIViewController {
         tableView.register(UINib(nibName: "SeasideTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasideTableViewCell")
         tableView.register(UINib(nibName: "WinterTableViewCell", bundle: nil), forCellReuseIdentifier: "WinterTableViewCell")
         tableView.register(UINib(nibName: "ToursTableViewCell", bundle: nil), forCellReuseIdentifier: "ToursTableViewCell")
+        tableView.register(UINib(nibName: "AmusementTableViewCell", bundle: nil), forCellReuseIdentifier: "AmusementTableViewCell")
         tableView.backgroundColor = .black
         tableView.delegate = self
         
@@ -101,7 +110,7 @@ class FavoriteViewController: UIViewController {
 
 extension FavoriteViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,9 +122,13 @@ extension FavoriteViewController: UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "WinterTableViewCell", for: indexPath) as! WinterTableViewCell
             cell.winter = winterFetched
             return cell
-        }else {
+        }else if indexPath.row == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ToursTableViewCell", for: indexPath) as!ToursTableViewCell
             cell.tours = tours
+            return cell
+        }else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AmusementTableViewCell", for: indexPath) as!AmusementTableViewCell
+            cell.amusement = amusement
             return cell
         }
     }
