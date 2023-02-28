@@ -19,7 +19,6 @@ class ResortHotelsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setUpcontentView()
         self.layer.masksToBounds = true
-       // self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.cornerRadius = 10
         self.backgroundColor = .black
@@ -28,6 +27,8 @@ class ResortHotelsTableViewCell: UITableViewCell {
     func configure(with item : Winter){
         locationName.text = item.name
         hotelName.text = item.hotelName
+        hotelImage.kf.indicatorType = .activity
+        hotelImage.kf.indicator?.view.tintColor = .white
         hotelImage.kf.setImage(with: URL(string: item.hotelImage))
         rateLbl.text = "Rating: \(item.hotelRate)⭐️"
     }

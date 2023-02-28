@@ -40,15 +40,6 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGh-96-yMy">
-                        <rect key="frame" x="268.33333333333331" y="10" width="50.666666666666686" height="34.333333333333336"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
-                        <connections>
-                            <action selector="didTapButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sug-1h-Vsd"/>
-                        </connections>
-                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -57,9 +48,7 @@
                 <constraint firstItem="nIz-uk-VK1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CrQ-2b-KXs"/>
                 <constraint firstAttribute="trailing" secondItem="nIz-uk-VK1" secondAttribute="trailing" constant="10" id="DZf-7j-lIq"/>
                 <constraint firstAttribute="trailing" secondItem="go4-g4-CRj" secondAttribute="trailing" constant="30" id="JFV-ng-XrE"/>
-                <constraint firstItem="rGh-96-yMy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Jpf-ZX-Bjh"/>
                 <constraint firstItem="nIz-uk-VK1" firstAttribute="top" secondItem="go4-g4-CRj" secondAttribute="bottom" constant="12" id="NUM-Bt-tLs"/>
-                <constraint firstAttribute="trailing" secondItem="rGh-96-yMy" secondAttribute="trailing" constant="10" id="UJQ-xG-KOD"/>
                 <constraint firstItem="sgC-5d-meQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UKV-BS-MMR"/>
                 <constraint firstAttribute="trailing" secondItem="sgC-5d-meQ" secondAttribute="trailing" id="XCf-4I-2lB"/>
                 <constraint firstItem="sgC-5d-meQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ekN-yu-cll"/>
@@ -71,12 +60,8 @@
                 <outlet property="amusementImage" destination="sgC-5d-meQ" id="am9-Cv-Z0O"/>
                 <outlet property="amusmentName" destination="go4-g4-CRj" id="YvV-YJ-Mne"/>
                 <outlet property="amusmentText" destination="nIz-uk-VK1" id="8ZF-h6-1XU"/>
-                <outlet property="heartbutton" destination="rGh-96-yMy" id="qEG-Wj-1Ft"/>
             </connections>
             <point key="canvasLocation" x="248.09160305343511" y="91.197183098591552"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="heart.fill" catalog="system" width="128" height="107"/>
-    </resources>
 </document>

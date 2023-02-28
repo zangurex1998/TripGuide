@@ -122,6 +122,8 @@ class WHotelsDetailsViewController: UIViewController {
         addFavouritesButton.tintColor = .cyan
         detailsView.layer.cornerRadius = 7
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: hotelNameTitle ?? "", preferredLargeTitle: true)
+        hotelImage.kf.indicatorType = .activity
+        hotelImage.kf.indicator?.view.tintColor = .white
         hotelImage.kf.setImage(with: URL(string: hotelString ?? ""))
         hotelImage.layer.cornerRadius = 8
         hotelName.text = hName

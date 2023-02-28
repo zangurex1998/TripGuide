@@ -11,13 +11,13 @@
         <!--Explore View Controller-->
         <scene sceneID="Opa-cG-AOj">
             <objects>
-                <viewController storyboardIdentifier="explore" id="aDe-bK-bWS" customClass="ExploreViewController" customModule="TouristGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="explore" id="aDe-bK-bWS" customClass="ExploreViewController" customModule="TripGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0uK-I2-GJs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-Td-mU4">
-                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <rect key="frame" x="0.0" y="160" width="393" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -27,7 +27,7 @@
                             <constraint firstItem="HQt-BR-AFk" firstAttribute="bottom" secondItem="zBI-Td-mU4" secondAttribute="bottom" id="0hm-L7-15x"/>
                             <constraint firstItem="HQt-BR-AFk" firstAttribute="trailing" secondItem="zBI-Td-mU4" secondAttribute="trailing" id="9RC-MB-Juh"/>
                             <constraint firstItem="zBI-Td-mU4" firstAttribute="leading" secondItem="HQt-BR-AFk" secondAttribute="leading" id="YnN-aW-1I0"/>
-                            <constraint firstItem="zBI-Td-mU4" firstAttribute="top" secondItem="HQt-BR-AFk" secondAttribute="top" id="oud-Lt-IPn"/>
+                            <constraint firstItem="zBI-Td-mU4" firstAttribute="top" secondItem="HQt-BR-AFk" secondAttribute="top" constant="5" id="ZYD-Bc-b6c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qWz-v7-IYQ"/>

@@ -31,9 +31,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     }
     private func setUpUI(){
         restaurantImage.layer.cornerRadius = 20
-        self.layer.borderColor = UIColor.gray.cgColor
-        self.layer.borderWidth = 2
-        self.layer.cornerRadius = 10
+//        self.layer.borderColor = UIColor.gray.cgColor
+//        self.layer.borderWidth = 2
+//        self.layer.cornerRadius = 10
         self.backgroundColor = .black
         bookLbl.layer.masksToBounds = true
         bookLbl.layer.cornerRadius = 10

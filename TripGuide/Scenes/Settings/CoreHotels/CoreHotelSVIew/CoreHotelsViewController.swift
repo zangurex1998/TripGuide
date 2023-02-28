@@ -13,6 +13,7 @@ class CoreHotelsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     var coreHotls: [CoreHotels] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class CoreHotelsViewController: UIViewController {
         super.viewWillAppear(animated)
         fetchData()
         self.collectionView.reloadData()
+
     }
     
     deinit{
