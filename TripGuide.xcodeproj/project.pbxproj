@@ -30,6 +30,11 @@
 		8041458529ACBBAB00FACD68 /* CoreResstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041458429ACBBAB00FACD68 /* CoreResstViewController.swift */; };
 		8041458A29ACBBEF00FACD68 /* CoreRestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041458829ACBBEF00FACD68 /* CoreRestCollectionViewCell.swift */; };
 		8041458B29ACBBEF00FACD68 /* CoreRestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8041458929ACBBEF00FACD68 /* CoreRestCollectionViewCell.xib */; };
+		80490BD829AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80490BD729AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf */; };
+		80490BE429AE422A0076E455 /* ParksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80490BE329AE422A0076E455 /* ParksCollectionView.swift */; };
+		80490BE629AE42330076E455 /* ParksDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80490BE529AE42330076E455 /* ParksDetailsViewController.swift */; };
+		80490BE829AE42400076E455 /* ParksDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80490BE729AE42400076E455 /* ParksDetails.storyboard */; };
+		80490BEA29AE42450076E455 /* ParksCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80490BE929AE42450076E455 /* ParksCollectionView.xib */; };
 		804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804E6D7729A6010700A3014A /* ToursDetails.storyboard */; };
 		804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7929A6011400A3014A /* ToursDViewController.swift */; };
 		804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */; };
@@ -135,6 +140,11 @@
 		8041458429ACBBAB00FACD68 /* CoreResstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreResstViewController.swift; sourceTree = "<group>"; };
 		8041458829ACBBEF00FACD68 /* CoreRestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRestCollectionViewCell.swift; sourceTree = "<group>"; };
 		8041458929ACBBEF00FACD68 /* CoreRestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreRestCollectionViewCell.xib; sourceTree = "<group>"; };
+		80490BD729AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Compact-Rounded-Regular.ttf"; sourceTree = "<group>"; };
+		80490BE329AE422A0076E455 /* ParksCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksCollectionView.swift; sourceTree = "<group>"; };
+		80490BE529AE42330076E455 /* ParksDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksDetailsViewController.swift; sourceTree = "<group>"; };
+		80490BE729AE42400076E455 /* ParksDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParksDetails.storyboard; sourceTree = "<group>"; };
+		80490BE929AE42450076E455 /* ParksCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParksCollectionView.xib; sourceTree = "<group>"; };
 		804E6D7729A6010700A3014A /* ToursDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToursDetails.storyboard; sourceTree = "<group>"; };
 		804E6D7929A6011400A3014A /* ToursDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDViewController.swift; sourceTree = "<group>"; };
 		804E6D7B29A6013F00A3014A /* ToursDetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDetTableViewCell.swift; sourceTree = "<group>"; };
@@ -344,6 +354,25 @@
 				8041458429ACBBAB00FACD68 /* CoreResstViewController.swift */,
 			);
 			path = CoreRestVIewController;
+			sourceTree = "<group>";
+		};
+		80490BD929AE3C410076E455 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				80490BE229AE3CAE0076E455 /* AmCollectionVIew */,
+				80490BE329AE422A0076E455 /* ParksCollectionView.swift */,
+				80490BE929AE42450076E455 /* ParksCollectionView.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		80490BE229AE3CAE0076E455 /* AmCollectionVIew */ = {
+			isa = PBXGroup;
+			children = (
+				80490BE729AE42400076E455 /* ParksDetails.storyboard */,
+				80490BE529AE42330076E455 /* ParksDetailsViewController.swift */,
+			);
+			path = AmCollectionVIew;
 			sourceTree = "<group>";
 		};
 		804E6D6A29A5FE0C00A3014A /* TableView */ = {
@@ -691,6 +720,7 @@
 			children = (
 				80919192299FCAA100850F46 /* Gilroy-Bold.ttf */,
 				80919191299FCAA100850F46 /* Gilroy-Regular.ttf */,
+				80490BD729AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf */,
 				80919193299FCAA100850F46 /* Gotham-Bold.otf */,
 			);
 			path = CustomFonts;
@@ -728,20 +758,21 @@
 		80B116EA29AD378B00B73A2E /* amusementFiles */ = {
 			isa = PBXGroup;
 			children = (
-				80B116EF29AD39DF00B73A2E /* CollectionView */,
+				80490BD929AE3C410076E455 /* Details */,
+				80B116EF29AD39DF00B73A2E /* AmusmentCollectionView */,
 				80B116EB29AD37D400B73A2E /* AmusementTableViewCell.swift */,
 				80B116EC29AD37D400B73A2E /* AmusementTableViewCell.xib */,
 			);
 			path = amusementFiles;
 			sourceTree = "<group>";
 		};
-		80B116EF29AD39DF00B73A2E /* CollectionView */ = {
+		80B116EF29AD39DF00B73A2E /* AmusmentCollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				80B116F029AD3A0200B73A2E /* AmusementCollectionViewCell.swift */,
 				80B116F129AD3A0200B73A2E /* AmusementCollectionViewCell.xib */,
 			);
-			path = CollectionView;
+			path = AmusmentCollectionView;
 			sourceTree = "<group>";
 		};
 		80B7022E29A7631A00B952FE /* MyBlog */ = {
@@ -869,9 +900,12 @@
 				804E6D7829A6010700A3014A /* ToursDetails.storyboard in Resources */,
 				80B7023529A763B600B952FE /* BlogStoryBoard.storyboard in Resources */,
 				80B116F329AD3A0200B73A2E /* AmusementCollectionViewCell.xib in Resources */,
+				80490BD829AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
+				80490BE829AE42400076E455 /* ParksDetails.storyboard in Resources */,
 				802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */,
+				80490BEA29AE42450076E455 /* ParksCollectionView.xib in Resources */,
 				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
 				802A1DAE29A4D0C000F5FB5B /* WinterTableViewCell.xib in Resources */,
@@ -945,6 +979,7 @@
 				80919188299FCA7900850F46 /* RestaurantApiManager.swift in Sources */,
 				802A1DB429A4D6AD00F5FB5B /* Summer.swift in Sources */,
 				80919146299FC8C700850F46 /* Extension+UIColor.swift in Sources */,
+				80490BE629AE42330076E455 /* ParksDetailsViewController.swift in Sources */,
 				80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */,
 				802A1DAD29A4D0C000F5FB5B /* WinterTableViewCell.swift in Sources */,
 				804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */,
@@ -972,6 +1007,7 @@
 				80B116ED29AD37D400B73A2E /* AmusementTableViewCell.swift in Sources */,
 				8041457F29ACB04000FACD68 /* CoreHotCollectionViewCell.swift in Sources */,
 				80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */,
+				80490BE429AE422A0076E455 /* ParksCollectionView.swift in Sources */,
 				80B7023329A7634A00B952FE /* BlogViewController.swift in Sources */,
 				8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */,
 				80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */,
