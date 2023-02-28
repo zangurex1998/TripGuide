@@ -19,7 +19,7 @@ class ParksDetailsViewController: UIViewController {
     var parksProtocol: AmusementApiManagerProtocol = AmusementApiManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "Amusement Parks", preferredLargeTitle: true)
         setUpCollectionView()
         view.backgroundColor = .black
         parksProtocol.fetchingAmusement { [weak self] parks in
@@ -52,10 +52,10 @@ extension ParksDetailsViewController: UICollectionViewDataSource,UICollectionVie
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
+        UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        2
+        7
     }
 
 }
