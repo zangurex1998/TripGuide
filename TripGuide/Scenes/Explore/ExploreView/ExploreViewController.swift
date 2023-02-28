@@ -26,7 +26,7 @@ class ExploreViewController: UIViewController {
             self?.fetchedCities = city.cities
         }
         navigationItem.backButtonTitle = ""
-        
+        view.backgroundColor = .black
     }
     
     
@@ -44,6 +44,7 @@ class ExploreViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ExploreTableViewCell", bundle: nil), forCellReuseIdentifier: "ExploreTableViewCell")
         tableView.delegate = self
+        tableView.backgroundColor = .black
         
     }
 

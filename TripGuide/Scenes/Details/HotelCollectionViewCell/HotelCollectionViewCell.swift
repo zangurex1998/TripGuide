@@ -22,9 +22,7 @@ class HotelCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
        setUpContentView()
-        self.layer.borderColor = UIColor.gray.cgColor
-        self.layer.borderWidth = 2
-        self.layer.cornerRadius = 10
+
         self.backgroundColor = .black
         
      
@@ -33,13 +31,12 @@ class HotelCollectionViewCell: UICollectionViewCell {
     func setUpContentView(){
         hotelImage.layer.cornerRadius = 20
         contentView.layer.cornerRadius = 20
-        reserve.backgroundColor = .red
         reserve.layer.masksToBounds = true
         reserve.layer.cornerRadius = 10
         hotelsName.textColor = .white
-//        detailedLocation.textColor = .white
+
         hotelRate.textColor = .white
-//        hotelsLocation.textColor = .white
+
         
 
     }
@@ -49,8 +46,7 @@ class HotelCollectionViewCell: UICollectionViewCell {
         hotelsName.text = hotels.name
         hotelRate.text = String("⭐️ \(hotels.rate)" )
         hotelImage.kf.setImage(with: URL(string: hotels.image))
-//        hotelsLocation.text = hotels.city
-//        detailedLocation.text = hotels.location
+
     }
 
 }

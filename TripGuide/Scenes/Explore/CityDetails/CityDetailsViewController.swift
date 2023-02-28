@@ -34,8 +34,8 @@ class CityDetailsViewController: UIViewController {
   
     
     private func setUpView(){
+        cityImage.kf.indicatorType = .activity
         cityImage.kf.setImage(with: URL(string: image!))
-       
         detailLbl.text = details
         setRightButton()
     }

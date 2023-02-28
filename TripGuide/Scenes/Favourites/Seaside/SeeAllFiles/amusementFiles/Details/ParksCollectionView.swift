@@ -14,7 +14,6 @@ class ParksCollectionView: UICollectionViewCell {
     @IBOutlet weak var amusmentName: UILabel!
     @IBOutlet weak var amusmentText: UILabel!
     
-    @IBOutlet weak var heartbutton: UIButton!
     
     var player: AVAudioPlayer!
     override func awakeFromNib() {
@@ -38,24 +37,4 @@ class ParksCollectionView: UICollectionViewCell {
         amusementImage.layer.cornerRadius = 12
     }
     
-    
-    
-    @IBAction func didTapButton(_ sender: Any) {
-        playSound()
-        heartbutton.tintColor = .red
-       
-    }
-    
-    func playSound(){
-        let url = Bundle.main.url(forResource: "like", withExtension: "mp3")
-        
-        do{
-            player = try AVAudioPlayer.init(contentsOf: url!)
-            player.play()
-        }
-        catch{
-            print("error")
-        }
-       
-    }
 }
