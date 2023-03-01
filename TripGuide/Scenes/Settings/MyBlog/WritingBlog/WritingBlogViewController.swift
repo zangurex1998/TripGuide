@@ -66,14 +66,14 @@ class WritingBlogViewController: UIViewController {
     //MARK: - Methods
     
     private func setUpButtons(){
-        clearAll.layer.backgroundColor = UIColor.systemGray.cgColor
-        save.layer.backgroundColor = UIColor.systemGray.cgColor
+//        clearAll.layer.backgroundColor = UIColor.systemGray.cgColor
+//        save.layer.backgroundColor = UIColor.systemGray.cgColor
         clearAll.layer.cornerRadius = 10
         save.layer.cornerRadius = 10
         clearAll.tintColor = .white
         save.tintColor = .white
         content.layer.cornerRadius = 5
-        content.layer.borderWidth = 0.5
+        content.layer.borderWidth = 2
         content.layer.borderColor = UIColor.systemOrange.cgColor
         header.attributedPlaceholder = NSAttributedString(string: "Tap Here For Header 🤩 ", attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemOrange])
     }

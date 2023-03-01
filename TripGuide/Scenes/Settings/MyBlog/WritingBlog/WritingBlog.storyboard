@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="FontsFree-Net-SF-Compact-Rounded-Regular.ttf">
+            <string>SFCompactRounded-Ultralight</string>
+        </array>
         <array key="Gilroy-Bold.ttf">
             <string>Gilroy-Bold</string>
         </array>
@@ -34,20 +37,24 @@
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="27"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yLt-u8-KWs">
-                                                <rect key="frame" x="0.0" y="40.666666666666686" width="393" height="608.33333333333326"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your memories here ✍️" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yLt-u8-KWs">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="393" height="647.33333333333326"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="393" id="Wv9-eL-H6l"/>
+                                                </constraints>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="SFCompactRounded-Ultralight" family="SF Compact Rounded" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-MH-4DJ">
-                                                <rect key="frame" x="20" y="669" width="353" height="34.333333333333371"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-MH-4DJ">
+                                                <rect key="frame" x="5" y="688" width="383" height="45"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-1N-5W2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="34.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="45"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Clear All">
+                                                        <buttonConfiguration key="configuration" style="plain" image="trash.circle.fill" catalog="system">
                                                             <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -55,9 +62,13 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-HJ-Tdt">
-                                                        <rect key="frame" x="201.66666666666663" y="0.0" width="151.33333333333337" height="34.333333333333336"/>
+                                                        <rect key="frame" x="201.66666666666663" y="0.0" width="181.33333333333337" height="45"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="IZN-qC-94e"/>
+                                                        </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Save">
+                                                        <buttonConfiguration key="configuration" style="plain" image="checkmark.seal" catalog="system">
                                                             <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -69,16 +80,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="KjB-MH-4DJ" firstAttribute="top" secondItem="yLt-u8-KWs" secondAttribute="bottom" constant="20" id="1Ic-n9-rCc"/>
-                                            <constraint firstAttribute="trailing" secondItem="KjB-MH-4DJ" secondAttribute="trailing" constant="20" id="4jV-Cx-1da"/>
-                                            <constraint firstAttribute="bottom" secondItem="KjB-MH-4DJ" secondAttribute="bottom" constant="29.670000000000002" id="EWP-mf-PSq"/>
+                                            <constraint firstItem="KjB-MH-4DJ" firstAttribute="top" secondItem="yLt-u8-KWs" secondAttribute="bottom" id="1Ic-n9-rCc"/>
+                                            <constraint firstAttribute="bottom" secondItem="KjB-MH-4DJ" secondAttribute="bottom" id="EWP-mf-PSq"/>
                                             <constraint firstItem="yLt-u8-KWs" firstAttribute="leading" secondItem="zLf-Pm-aVs" secondAttribute="leading" id="GGx-KD-RSr"/>
                                             <constraint firstItem="IRH-RO-pIB" firstAttribute="top" secondItem="zLf-Pm-aVs" secondAttribute="top" constant="10" id="JjL-w2-XMJ"/>
                                             <constraint firstAttribute="trailing" secondItem="yLt-u8-KWs" secondAttribute="trailing" id="U4L-Ug-aSV"/>
+                                            <constraint firstItem="KjB-MH-4DJ" firstAttribute="leading" secondItem="zLf-Pm-aVs" secondAttribute="leading" constant="5" id="cCd-yK-9MY"/>
+                                            <constraint firstAttribute="trailing" secondItem="KjB-MH-4DJ" secondAttribute="trailing" constant="5" id="gG2-wI-FQt"/>
                                             <constraint firstAttribute="trailing" secondItem="IRH-RO-pIB" secondAttribute="trailing" constant="10" id="jtt-hI-oxG"/>
                                             <constraint firstItem="yLt-u8-KWs" firstAttribute="top" secondItem="IRH-RO-pIB" secondAttribute="bottom" constant="2" id="laP-I0-98K"/>
                                             <constraint firstItem="IRH-RO-pIB" firstAttribute="leading" secondItem="zLf-Pm-aVs" secondAttribute="leading" constant="10" id="tLG-HJ-bya"/>
-                                            <constraint firstItem="KjB-MH-4DJ" firstAttribute="leading" secondItem="zLf-Pm-aVs" secondAttribute="leading" constant="20" id="zsK-Tu-lEj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -136,6 +147,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.seal" catalog="system" width="128" height="124"/>
+        <image name="trash.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

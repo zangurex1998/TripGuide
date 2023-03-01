@@ -14,7 +14,7 @@ class CollectionDataSource{
         .init(cellHeader: "📝 Planned Trip"),
         .init(cellHeader: "🏨 Favorite Hotels"),
         .init(cellHeader: "🍽 Favorite Restaurants"),
-        .init(cellHeader: "✍️ My Blog")
+        .init(cellHeader: "✍️ Memories")
         
     ]
     
