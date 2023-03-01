@@ -121,10 +121,9 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGz-dI-bl8">
-                                                <rect key="frame" x="124" y="784" width="169" height="50"/>
+                                                <rect key="frame" x="100" y="784" width="193" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Jg3-iQ-vG7"/>
-                                                    <constraint firstAttribute="width" constant="169" id="rjr-Xm-Oma"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -133,7 +132,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add To Plans 😍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKr-3D-VlX">
-                                                <rect key="frame" x="124" y="784" width="169" height="50"/>
+                                                <rect key="frame" x="100" y="784" width="193" height="50"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -152,13 +151,14 @@
                                             <constraint firstItem="UKr-3D-VlX" firstAttribute="bottom" secondItem="AGz-dI-bl8" secondAttribute="bottom" id="F5Q-Dg-xBg"/>
                                             <constraint firstAttribute="trailing" secondItem="c68-Ek-l5p" secondAttribute="trailing" constant="10" id="Fx4-K4-UC7"/>
                                             <constraint firstAttribute="trailing" secondItem="p3s-cm-4LN" secondAttribute="trailing" constant="10" id="HXj-66-pk6"/>
+                                            <constraint firstItem="UKr-3D-VlX" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="100" id="Hro-Dm-0zF"/>
                                             <constraint firstItem="sEH-VR-YD1" firstAttribute="top" secondItem="zRE-bL-73C" secondAttribute="top" constant="15" id="KUy-VX-TIK"/>
                                             <constraint firstItem="tCg-fC-IDz" firstAttribute="top" secondItem="c68-Ek-l5p" secondAttribute="bottom" constant="20.000000000000057" id="KZx-bj-3Ee"/>
                                             <constraint firstItem="oe3-up-ekN" firstAttribute="top" secondItem="sEH-VR-YD1" secondAttribute="bottom" constant="20" id="Lhj-GQ-dBZ"/>
                                             <constraint firstItem="c68-Ek-l5p" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="16" id="Ndl-pn-3p2"/>
                                             <constraint firstItem="uTM-Ax-FDa" firstAttribute="leading" secondItem="p3s-cm-4LN" secondAttribute="leading" id="NtJ-Rw-LjF"/>
                                             <constraint firstItem="uTM-Ax-FDa" firstAttribute="trailing" secondItem="p3s-cm-4LN" secondAttribute="trailing" id="Rhb-9Y-w4b"/>
-                                            <constraint firstItem="AGz-dI-bl8" firstAttribute="leading" secondItem="zRE-bL-73C" secondAttribute="leading" constant="124" id="SGd-0b-8Zc"/>
+                                            <constraint firstAttribute="trailing" secondItem="UKr-3D-VlX" secondAttribute="trailing" constant="100" id="SrN-rv-OCN"/>
                                             <constraint firstItem="pPd-eT-d9U" firstAttribute="leading" secondItem="oe3-up-ekN" secondAttribute="leading" id="TJi-of-rag"/>
                                             <constraint firstItem="uTM-Ax-FDa" firstAttribute="top" secondItem="pPd-eT-d9U" secondAttribute="bottom" constant="10" id="an0-aI-xqO"/>
                                             <constraint firstItem="c68-Ek-l5p" firstAttribute="top" secondItem="oe3-up-ekN" secondAttribute="bottom" constant="10" id="eyg-Vn-yJ0"/>
