@@ -8,10 +8,12 @@
 import UIKit
 import Kingfisher
 import CoreData
+import AVFoundation
 class CityDetailsViewController: UIViewController {
     
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var detailLbl: UILabel!
+    var player: AVAudioPlayer!
     var image: String?
     var details: String?
     var pageTitle: String?
@@ -32,7 +34,16 @@ class CityDetailsViewController: UIViewController {
         print("this page was deinited")
     }
   
-    
+    private func playSound(){
+        guard let url = Bundle.main.url(forResource: "like", withExtension: "mp3") else { return }
+        do{
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        }
+        catch{
+           print(error)
+        }
+    }
     private func setUpView(){
         cityImage.kf.indicatorType = .activity
         cityImage.kf.setImage(with: URL(string: image!))
@@ -47,7 +58,7 @@ class CityDetailsViewController: UIViewController {
     }
     @objc func didTapHeart(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "suit.heart.fill"), style: .done, target: self, action: #selector(taped))
-      
+        playSound()
         save()
     }
     
@@ -61,7 +72,7 @@ class CityDetailsViewController: UIViewController {
         guard let appdelegate = (UIApplication.shared.delegate as? AppDelegate ) else {return}
         let container = appdelegate.persistentContainer
         let context = container.viewContext
-        guard let entity = NSEntityDescription.entity(forEntityName: "Favourite", in: context) else {return}
+        guard let entity = NSEntityDescription.entity(forEntityName: "FavouriteStory", in: context) else {return}
         let favorite = NSManagedObject(entity: entity, insertInto: context)
         
         favorite.setValue(detailLbl.text, forKey: "story")
