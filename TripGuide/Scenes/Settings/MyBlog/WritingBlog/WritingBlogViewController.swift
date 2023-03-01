@@ -33,11 +33,6 @@ class WritingBlogViewController: UIViewController {
         print(paths)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        hideKeyboardWhenTappedAround()
-    }
-    
     private func setUpRightButton(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle.fill"), style: .done, target: self, action: #selector(tappedOnSave))
     }

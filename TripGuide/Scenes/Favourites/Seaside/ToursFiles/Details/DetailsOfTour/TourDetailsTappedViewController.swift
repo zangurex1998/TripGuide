@@ -29,6 +29,8 @@ class TourDetailsTappedViewController: UIViewController {
     
     @IBOutlet weak var addToPlanslbl: UILabel!
     
+    @IBOutlet weak var tourContentView: UIView!
+    
     //MARK: - Properties
     var player: AVAudioPlayer!
     var tName: String?
@@ -47,6 +49,7 @@ class TourDetailsTappedViewController: UIViewController {
         setUpUI()
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!
         print(paths)
+        tourContentView.backgroundColor = UIColor(hex: "011627")
     }
     
     deinit{
@@ -57,6 +60,9 @@ class TourDetailsTappedViewController: UIViewController {
     
     @IBAction func didTapAddToPlans(_ sender: Any) {
             print("Tapped add To Plans")
+        
+        addToPlans.backgroundColor = .green
+        addToPlans.tintColor = .black
             playSound()
             save()
     }

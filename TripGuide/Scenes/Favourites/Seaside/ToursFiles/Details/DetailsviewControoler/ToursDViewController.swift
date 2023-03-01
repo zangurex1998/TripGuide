@@ -31,12 +31,14 @@ class ToursDViewController: UIViewController {
         }
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .white, title: "Suggested Tours", preferredLargeTitle: true)
         navigationItem.backButtonTitle = ""
+        
     }
     
     private func setUpTableView(){
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ToursDetTableViewCell", bundle: nil), forCellReuseIdentifier: "ToursDetTableViewCell")
+      
     }
     
     

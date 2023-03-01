@@ -83,7 +83,7 @@ class DetailsViewController: UIViewController {
     private func setUpSearchController(){
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
-        searchController.searchBar.placeholder = "Search For city"
+        searchController.searchBar.placeholder = "Search hotels or restaurants"
         searchController.searchBar.searchTextField.tintColor = .white
         searchController.searchBar.searchTextField.textColor = .white
         searchController.searchBar.backgroundColor = .black

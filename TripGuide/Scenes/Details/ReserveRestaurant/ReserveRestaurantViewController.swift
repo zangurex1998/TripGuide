@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 import CoreData
+import AVFoundation
 class ReserveRestaurantViewController: UIViewController {
  //MARK: - Outlets
     @IBOutlet weak var restaurantImage: UIImageView!
@@ -23,7 +24,7 @@ class ReserveRestaurantViewController: UIViewController {
 
 
     //MARK: - properties
-
+    var player: AVAudioPlayer!
     var restName: String?
     var restImage: String?
     var restRating: Int?
@@ -57,9 +58,24 @@ class ReserveRestaurantViewController: UIViewController {
 
     @IBAction func didTapReserveTable(_ sender: Any) {
         save()
-
+        playSound()
+        
+        reserveButton.tintColor = .black
+        reserveButton.backgroundColor = .green
     }
-
+      
+    //MARK: - Actions
+    
+    private func playSound(){
+        guard let url = Bundle.main.url(forResource: "applePay", withExtension: "mp3") else { return }
+        do{
+            player = try AVAudioPlayer(contentsOf: url)
+            player.play()
+        }
+        catch{
+            print(error)
+        }
+    }
 
     /// Saving to CoreData
 

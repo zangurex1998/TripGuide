@@ -77,6 +77,8 @@ class WHotelsDetailsViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func didTapAddButton(_ sender: Any) {
+        addFavouritesButton.backgroundColor = .green
+        addFavouritesButton.tintColor = .black
         saveData()
         audioPLayer()
     }
