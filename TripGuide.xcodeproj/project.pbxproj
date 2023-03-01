@@ -50,6 +50,7 @@
 		807712E929A775A200124195 /* WritingBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807712E829A775A200124195 /* WritingBlogViewController.swift */; };
 		808120FF29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */; };
 		8081210029A4CA1900A3DDBD /* WinteerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */; };
+		808CC16C29AF41D1008D23DA /* Extensions+UIviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CC16B29AF41D1008D23DA /* Extensions+UIviewController.swift */; };
 		80919121299FC74A00850F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919120299FC74A00850F46 /* AppDelegate.swift */; };
 		80919123299FC74A00850F46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80919122299FC74A00850F46 /* SceneDelegate.swift */; };
 		8091912B299FC74B00850F46 /* TripGuide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80919129299FC74B00850F46 /* TripGuide.xcdatamodeld */; };
@@ -160,6 +161,7 @@
 		807712E829A775A200124195 /* WritingBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingBlogViewController.swift; sourceTree = "<group>"; };
 		808120FD29A4CA1900A3DDBD /* WinteerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinteerCollectionViewCell.swift; sourceTree = "<group>"; };
 		808120FE29A4CA1900A3DDBD /* WinteerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinteerCollectionViewCell.xib; sourceTree = "<group>"; };
+		808CC16B29AF41D1008D23DA /* Extensions+UIviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIviewController.swift"; sourceTree = "<group>"; };
 		8091911D299FC74A00850F46 /* TripGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80919120299FC74A00850F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80919122299FC74A00850F46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -579,6 +581,7 @@
 			children = (
 				80919145299FC8C700850F46 /* Extension+TabBarExtension.swift */,
 				80919144299FC8C700850F46 /* Extension+UIColor.swift */,
+				808CC16B29AF41D1008D23DA /* Extensions+UIviewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -998,6 +1001,7 @@
 				805AFE4529A79F2000F10D98 /* DataShouldBeFetched.xcdatamodeld in Sources */,
 				80919170299FC9DD00850F46 /* DetailsViewController.swift in Sources */,
 				80B116E729AD362E00B73A2E /* amusement.swift in Sources */,
+				808CC16C29AF41D1008D23DA /* Extensions+UIviewController.swift in Sources */,
 				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
 				805AFE4E29A7D38E00F10D98 /* PlannedTourTableViewCell.swift in Sources */,
@@ -1151,6 +1155,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7854V45BU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripGuide/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1158,6 +1163,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1178,6 +1184,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7854V45BU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripGuide/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1185,6 +1192,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
