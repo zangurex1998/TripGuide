@@ -25,15 +25,25 @@ class WritingBlogViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        setUpRightButton()
         setUpButtons()
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "My Blog", preferredLargeTitle: true)
-       
+        
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!
         print(paths)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        hideKeyboardWhenTappedAround()
+    }
     
+    private func setUpRightButton(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "checkmark.circle.fill"), style: .done, target: self, action: #selector(tappedOnSave))
+    }
+    @objc func tappedOnSave(){
+        dismissKeyboard()
+    }
 
     
     deinit {
