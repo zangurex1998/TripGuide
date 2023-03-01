@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class RestaurantCollectionViewCell: UICollectionViewCell {
     //MARK: - Outlets
     
@@ -23,6 +23,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     func configureRestaurant(with rest : Restaurant){
         restaurantName.text = rest.name
+        restaurantImage.kf.indicatorType = .activity
         restaurantImage.kf.setImage(with: URL(string: rest.image))
         restaurantName.textColor = .white
         rateLbl.text = "\(rest.rate) ⭐️"

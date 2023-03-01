@@ -11,7 +11,6 @@ class CollectionDataSource{
     static var shared = CollectionDataSource()
     let pageHeader: [LastPage] = [
         .init(cellHeader: "❤️ Liked Story "),
-        .init(cellHeader: "⛰ Favorite Places"),
         .init(cellHeader: "📝 Planned Trip"),
         .init(cellHeader: "🏨 Favorite Hotels"),
         .init(cellHeader: "🍽 Favorite Restaurants"),

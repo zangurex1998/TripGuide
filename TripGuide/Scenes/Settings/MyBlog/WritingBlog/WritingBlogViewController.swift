@@ -27,7 +27,7 @@ class WritingBlogViewController: UIViewController {
         super.viewDidLoad()
         setUpRightButton()
         setUpButtons()
-        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "My Blog", preferredLargeTitle: true)
+        configureNavigationBar(largeTitleColor: .white, backgoundColor: .black, tintColor: .red, title: "My Blog", preferredLargeTitle: false)
         
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!
         print(paths)

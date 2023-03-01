@@ -14,16 +14,24 @@ class ReserveRestaurantViewController: UIViewController {
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var reserveView: UIView!
     @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var reserveButton: UIButton!
-    @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var averageRate: UILabel!
-    @IBOutlet weak var headerAdress: UILabel!
-    @IBOutlet weak var dateLayer: UIDatePicker!
     @IBOutlet weak var cityLbl: UILabel!
-
-
+    
+    @IBOutlet weak var foodLbl: UILabel!
+    @IBOutlet weak var servicLbl: UILabel!
+    @IBOutlet weak var valueLbl: UILabel!
+    
+    @IBOutlet weak var friendlyLbl: UILabel!
+    
+    @IBOutlet weak var contactLbl: UILabel!
+    @IBOutlet weak var pricesLbl: UILabel!
     //MARK: - properties
+    var contact : String?
+    var friendlyDiets: String?
+    var food: String?
+    var service: String?
+    var valueString: String?
     var player: AVAudioPlayer!
     var restName: String?
     var restImage: String?
@@ -31,7 +39,7 @@ class ReserveRestaurantViewController: UIViewController {
     var restLocation: String?
     var city: String?
     var check = Int.random(in: 1000...2000)
-
+    var prices: String?
     deinit{
         print("Deinited and no memory Leaks anymore!")
     }
@@ -115,22 +123,22 @@ class ReserveRestaurantViewController: UIViewController {
         restaurantImage.layer.borderWidth = 2
         restaurantImage.layer.borderColor = UIColor.gray.cgColor
           nameLbl.text = restName
-        addressLbl.text = restLocation
+        contactLbl.text = "☎️ \(contact!)"
         reserveView.backgroundColor = UIColor(hex: "011627")
         nameLbl.textColor = .white
-        addressLbl.textColor = .white
-
-
+        foodLbl.text = "🍴 Food \(food!) ⭐️"
+        servicLbl.text = "🤵‍♀️ Service \(service!) ⭐️ "
+        valueLbl.text = "💲 Value \(valueString!) ⭐️"
+        friendlyLbl.text = friendlyDiets
+        pricesLbl.text = prices
         reserveButton.backgroundColor = .darkGray
         reserveButton.layer.cornerRadius = 10
         reserveButton.tintColor = .white
-        dateLbl.textColor = .white
+        
         averageRate.textColor = .white
-        headerAdress.textColor = .white
+       
         guard let rating = restRating else {return}
-        averageRate.text! += "\(rating) ⭐️ (reviewed by 140 customer)"
-        dateLayer.backgroundColor = UIColor(hex: "011627")
-        dateLayer.tintColor = .blue
+        averageRate.text! += "\(rating) ⭐️"
         cityLbl.text = city
 
 

@@ -18,4 +18,11 @@ struct Restaurant: Codable{
     let image: String
     let imageTwo: String
     let rate: Int
+    let priceRange: String
+    let specialDiets: String
+    let food: String
+    let contact: String
+    let value: String
+    let service: String
+    
 }

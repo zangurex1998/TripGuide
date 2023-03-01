@@ -69,16 +69,16 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
         case 0 :
             let vc = UIStoryboard(name: "FavouriteStory", bundle: nil).instantiateViewController(withIdentifier: "favStory")
             navigationController?.pushViewController(vc, animated: true)
-        case 5 :
+        case 4 :
             let vc = UIStoryboard(name: "BlogStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "blog")
             navigationController?.pushViewController(vc, animated: true)
-        case 2 :
+        case 1 :
             let vc = UIStoryboard(name: "PlannedTour", bundle: nil).instantiateViewController(withIdentifier: "plannedTour")
             navigationController?.pushViewController(vc, animated: true)
-        case 3 :
+        case 2 :
             let vc = UIStoryboard(name: "CoreHotels", bundle: nil).instantiateViewController(withIdentifier: "coreHotel")
             navigationController?.pushViewController(vc, animated: true)
-        case 4 :
+        case 3 :
             let vc = UIStoryboard(name: "CoreRestaurants", bundle: nil).instantiateViewController(withIdentifier: "coreRest")
             navigationController?.pushViewController(vc, animated: true)
         default:
