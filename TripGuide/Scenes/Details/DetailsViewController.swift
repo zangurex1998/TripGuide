@@ -155,6 +155,12 @@ extension DetailsViewController: UICollectionViewDelegate{
             vc.restRating = restaurant[indexPath.row].rate
             vc.restLocation = restaurant[indexPath.row].location
             vc.city = restaurant[indexPath.row].city
+            vc.food = restaurant[indexPath.row].food
+            vc.service = restaurant[indexPath.row].service
+            vc.valueString = restaurant[indexPath.row].value
+            vc.friendlyDiets = restaurant[indexPath.row].specialDiets
+            vc.contact = restaurant[indexPath.row].contact
+            vc.prices = restaurant[indexPath.row].priceRange
             navigationController?.present(vc, animated: true)
         }else if defaultCategory == .hotels{
             let secondVC = UIStoryboard(name: "WinterHDetails", bundle: nil).instantiateViewController(withIdentifier: "WinterHDetails") as! WHotelsDetailsViewController
