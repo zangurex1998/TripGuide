@@ -67,7 +67,7 @@ extension SettingsViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0 :
-            let vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewController(withIdentifier: "summer")
+            let vc = UIStoryboard(name: "FavouriteStory", bundle: nil).instantiateViewController(withIdentifier: "favStory")
             navigationController?.pushViewController(vc, animated: true)
         case 5 :
             let vc = UIStoryboard(name: "BlogStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "blog")

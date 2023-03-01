@@ -113,6 +113,10 @@
 		80D429F129A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D429EF29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib */; };
 		80D5E6A729A89E7600958BE6 /* applePay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80D5E6A629A89E7600958BE6 /* applePay.mp3 */; };
 		80D5E6A929A8A44E00958BE6 /* like.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80D5E6A829A8A44E00958BE6 /* like.mp3 */; };
+		80E734F429AF800800ECA657 /* FavouriteStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E734F329AF800800ECA657 /* FavouriteStory.storyboard */; };
+		80E734F629AF802200ECA657 /* FavouriteStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E734F529AF802200ECA657 /* FavouriteStoryViewController.swift */; };
+		80E734FA29AF810D00ECA657 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E734F829AF810D00ECA657 /* FavTableViewCell.swift */; };
+		80E734FB29AF810D00ECA657 /* FavTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E734F929AF810D00ECA657 /* FavTableViewCell.xib */; };
 		80FCEDB429A13E670032BB39 /* SeasideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */; };
 		80FCEDB529A13E670032BB39 /* SeasideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -225,6 +229,10 @@
 		80D429EF29A6753F00BF26E8 /* MyFavoritesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFavoritesCollectionViewCell.xib; sourceTree = "<group>"; };
 		80D5E6A629A89E7600958BE6 /* applePay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = applePay.mp3; sourceTree = "<group>"; };
 		80D5E6A829A8A44E00958BE6 /* like.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = like.mp3; sourceTree = "<group>"; };
+		80E734F329AF800800ECA657 /* FavouriteStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouriteStory.storyboard; sourceTree = "<group>"; };
+		80E734F529AF802200ECA657 /* FavouriteStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStoryViewController.swift; sourceTree = "<group>"; };
+		80E734F829AF810D00ECA657 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
+		80E734F929AF810D00ECA657 /* FavTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavTableViewCell.xib; sourceTree = "<group>"; };
 		80FCEDB229A13E670032BB39 /* SeasideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasideTableViewCell.swift; sourceTree = "<group>"; };
 		80FCEDB329A13E670032BB39 /* SeasideTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasideTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -589,6 +597,7 @@
 		80919148299FC8D900850F46 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				80E734F229AF7FF900ECA657 /* FavouritesStory */,
 				8041458129ACBB3700FACD68 /* CoreRestaurants */,
 				8041457629ACAF6900FACD68 /* CoreHotels */,
 				805AFE4B29A7D37800F10D98 /* PlannedToursTableView */,
@@ -824,6 +833,25 @@
 			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
+		80E734F229AF7FF900ECA657 /* FavouritesStory */ = {
+			isa = PBXGroup;
+			children = (
+				80E734F729AF80F400ECA657 /* STableView */,
+				80E734F329AF800800ECA657 /* FavouriteStory.storyboard */,
+				80E734F529AF802200ECA657 /* FavouriteStoryViewController.swift */,
+			);
+			path = FavouritesStory;
+			sourceTree = "<group>";
+		};
+		80E734F729AF80F400ECA657 /* STableView */ = {
+			isa = PBXGroup;
+			children = (
+				80E734F829AF810D00ECA657 /* FavTableViewCell.swift */,
+				80E734F929AF810D00ECA657 /* FavTableViewCell.xib */,
+			);
+			path = STableView;
+			sourceTree = "<group>";
+		};
 		80FCEDB129A13E490032BB39 /* Seaside */ = {
 			isa = PBXGroup;
 			children = (
@@ -905,9 +933,11 @@
 				80B116F329AD3A0200B73A2E /* AmusementCollectionViewCell.xib in Resources */,
 				80490BD829AE3B860076E455 /* FontsFree-Net-SF-Compact-Rounded-Regular.ttf in Resources */,
 				80348E3529A5EF5100D192B3 /* ToursCollectionViewCell.xib in Resources */,
+				80E734FB29AF810D00ECA657 /* FavTableViewCell.xib in Resources */,
 				80B2639929A1509700A0F3EF /* Gotham-Bold.otf in Resources */,
 				80490BE829AE42400076E455 /* ParksDetails.storyboard in Resources */,
 				802E425A29A6272B00F6A245 /* TourDetailsTapped.storyboard in Resources */,
+				80E734F429AF800800ECA657 /* FavouriteStory.storyboard in Resources */,
 				80490BEA29AE42450076E455 /* ParksCollectionView.xib in Resources */,
 				80348E3129A5ED3700D192B3 /* ToursTableViewCell.xib in Resources */,
 				80919162299FC99F00850F46 /* ReserveRestaurant.storyboard in Resources */,
@@ -984,6 +1014,7 @@
 				80919146299FC8C700850F46 /* Extension+UIColor.swift in Sources */,
 				80490BE629AE42330076E455 /* ParksDetailsViewController.swift in Sources */,
 				80348E3029A5ED3700D192B3 /* ToursTableViewCell.swift in Sources */,
+				80E734F629AF802200ECA657 /* FavouriteStoryViewController.swift in Sources */,
 				802A1DAD29A4D0C000F5FB5B /* WinterTableViewCell.swift in Sources */,
 				804E6D7A29A6011400A3014A /* ToursDViewController.swift in Sources */,
 				80919176299FCA1800850F46 /* ExploreTableViewCell.swift in Sources */,
@@ -1005,6 +1036,7 @@
 				80348E3429A5EF5100D192B3 /* ToursCollectionViewCell.swift in Sources */,
 				80919187299FCA7900850F46 /* PlacesAPIManager.swift in Sources */,
 				805AFE4E29A7D38E00F10D98 /* PlannedTourTableViewCell.swift in Sources */,
+				80E734FA29AF810D00ECA657 /* FavTableViewCell.swift in Sources */,
 				8041458529ACBBAB00FACD68 /* CoreResstViewController.swift in Sources */,
 				804E6D7D29A6013F00A3014A /* ToursDetTableViewCell.swift in Sources */,
 				80B116E929AD368100B73A2E /* AmusementApiManager.swift in Sources */,
