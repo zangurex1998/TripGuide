@@ -34,7 +34,11 @@ class DetailsViewController: UIViewController {
             self.collectionView.reloadData()
         }
     }
-    
+        
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        navigationController?.tabBarItem.title = ""
+    }
 
     
     override func viewDidLoad() {

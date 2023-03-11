@@ -29,6 +29,10 @@ class ExploreViewController: UIViewController {
         view.backgroundColor = .black
     }
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        navigationController?.tabBarItem.title = ""
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {

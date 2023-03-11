@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController {
         super.init(coder: coder)
         
         navigationController?.tabBarItem.image = UIImage(systemName: "person.fill")
-        navigationController?.tabBarItem.title = "Profile"
+        navigationController?.tabBarItem.title = ""
     }
     
     override func viewDidLoad() {
